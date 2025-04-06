@@ -1,0 +1,7 @@
+<application>
+  <component name="UISettings">
+    <option name="COLOR_BLINDNESS" value="deuteranopia" />
+    <option name="UI_DENSITY" value="COMPACT" />
+    <option name="CONTRAST_SCROLLBARS" value="true" />
+  </component>
+</application>

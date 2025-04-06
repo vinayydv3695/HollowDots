@@ -1,0 +1,27 @@
+<application>
+  <component name="MaterialThemeNewConfig">
+    <option name="accentState">
+      <MTAccentConfigState>
+        <option name="accentColorHex" value="c6a0f6" />
+      </MTAccentConfigState>
+    </option>
+    <option name="metadata">
+      <MTMetadataState>
+        <option name="pristineConfig" value="false" />
+        <option name="userId" value="7edd6273:1950a3e4b89:-8000" />
+        <option name="version" value="9.7.0" />
+        <option name="wizardShown" value="true" />
+      </MTMetadataState>
+    </option>
+    <option name="tabsState">
+      <MTTabsConfigState>
+        <option name="tabsHeight" value="34" />
+      </MTTabsConfigState>
+    </option>
+    <option name="themeState">
+      <MTThemeConfigState>
+        <option name="selectedThemeName" value="NATIVE" />
+      </MTThemeConfigState>
+    </option>
+  </component>
+</application>

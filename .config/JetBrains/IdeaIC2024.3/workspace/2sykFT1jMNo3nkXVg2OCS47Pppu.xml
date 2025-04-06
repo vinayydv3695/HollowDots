@@ -1,0 +1,499 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="ecommerce_app" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="38qzb9m0xr8p5" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="630">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"pom.xml","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,88,10,31,105,99,111,110,115,47,114,101,112,111,115,105,116,111,114,121,76,105,98,114,97,114,121,76,111,103,111,46,115,118,103,18,21,105,99,111,110,115,47,101,120,112,117,105,47,109,97,118,101,110,46,115,118,103,26,17,99,111,109,46,105,110,116,101,108,108,105,106,46,106,97,118,97,40,-81,-67,-81,-7,-5,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/ServletInitializer.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="84">
+              <caret line="5" column="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ServletInitializer.java","foregroundColor":-5194043,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/EcommerceAppApplication.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="105">
+              <caret line="6" column="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"EcommerceAppApplication.java","foregroundColor":-5194043,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/controllers/ProductController.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="525">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ProductController.java","foregroundColor":-5194043,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/entities/Product.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="63">
+              <caret line="3" column="13" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Product.java","foregroundColor":-5194043,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/repositories/ProductRepository.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="105">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"ProductRepository.java","foregroundColor":-5194043,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "JAVA": {
+      "usageCount": 15,
+      "lastUsed": 1739762421613
+    },
+    "XML": {
+      "usageCount": 3,
+      "lastUsed": 1739762421630
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/zura/Personal/4th sem /Frameworks/ecommerce_app/pom.xml&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="15" lastUsage="1739762421613" />
+    </language>
+    <language id="XML">
+      <summary usageCount="3" lastUsage="1739762421630" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/bruno-collection}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/controllers}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/entities}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/repositories}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="ecommerce_app" />
+            <item name="ecommerce_app" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="ecommerce_app" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/bruno-collection" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="bruno-collection" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/bruno-collection}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bruno-collection/bruno.json" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/json.svg" iconPlugin="com.intellij" isLeaf="true" text="bruno.json" />
+                  <item name="bruno.json" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bruno-collection/delete product.bru" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="delete product.bru" />
+                  <item name="delete product.bru" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/bruno-collection/Ecomersce APP.bru" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="Ecomersce APP.bru" />
+                  <item name="Ecomersce APP.bru" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="main" />
+                  <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/main/java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/sourceRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="java" />
+                    <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="org.ncu.ecommerce_app" />
+                      <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app}" type="462c0819:PsiDirectoryNode" />
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/controllers" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="controllers" />
+                        <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/controllers}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/controllers/ProductController.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="ProductController" />
+                          <item name="ProductController" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/entities" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="entities" />
+                        <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/entities}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/entities/Product.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="Product" />
+                          <item name="Product" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/repositories" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="repositories" />
+                        <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/repositories}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/repositories/ProductRepository.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="ProductRepository" />
+                          <item name="ProductRepository" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/services" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="services" />
+                        <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/java/org/ncu/ecommerce_app/services}" type="462c0819:PsiDirectoryNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/EcommerceAppApplication.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EcommerceAppApplication" />
+                        <item name="EcommerceAppApplication" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/ServletInitializer.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="ServletInitializer" />
+                        <item name="ServletInitializer" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/main/resources" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/resourcesRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="resources" />
+                    <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/main/resources}" type="462c0819:PsiDirectoryNode" />
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="test" />
+                  <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/src/test}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/target" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="target" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/ecommerce_app/target}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pom.xml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                <item name="pom.xml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33026317" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.32990196" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.32990196" left="0.33026317" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="735" y="318" key="FileChooserDialogImpl" timestamp="1739762448194">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="735" y="318" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1739762448194" />
+    <state width="1818" height="294" key="GridCell.Tab.0.bottom" timestamp="1739435796941">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1739435796941" />
+    <state width="1818" height="294" key="GridCell.Tab.0.center" timestamp="1739435796941">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1739435796941" />
+    <state width="1818" height="294" key="GridCell.Tab.0.left" timestamp="1739435796941">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1739435796941" />
+    <state width="1818" height="294" key="GridCell.Tab.0.right" timestamp="1739435796941">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1739435796941" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/controllers/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/repositories/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/EcommerceAppApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ncu/ecommerce_app/entities/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

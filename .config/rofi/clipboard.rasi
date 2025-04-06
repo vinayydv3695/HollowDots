@@ -6,6 +6,7 @@ configuration {
 
 @theme "~/.config/rofi/theme.rasi"
 
+
 // Main //
 window {
     width:                       23em;
@@ -16,12 +17,8 @@ window {
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border:                      2px solid @border-color;
-    border-radius:               0px;  // Sharp edges
     border-color:                @main-br;
     background-color:            @main-bg;
-    shadow:                      true;
-    shadow-color:                rgba(0, 0, 0, 0.5);
 }
 mainbox {
     enabled:                     true;
@@ -49,6 +46,7 @@ wallframe {
     background-image:            url("~/.cache/hyde/wall.quad", width);
 }
 
+
 // Inputs //
 inputbar {
     enabled:                     true;
@@ -56,15 +54,14 @@ inputbar {
     children:                    [ "entry" ];
     background-color:            @main-bg;
     expand:                      true;
-    border-bottom:               2px solid @border-color;
 }
 entry {
     enabled:                     true;
     padding:                     1.8em;
     text-color:                  @main-fg;
     background-color:            transparent;
-    font:                        "Noto Sans 12";  // Modern font
 }
+
 
 // Lists //
 listbox {
@@ -93,6 +90,7 @@ dummy {
     background-color:            transparent;
 }
 
+
 // Elements //
 element {
     enabled:                     true;
@@ -100,7 +98,6 @@ element {
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
-    border-bottom:               1px solid @border-color;
 }
 element selected.normal {
     background-color:            @select-bg;
@@ -112,21 +109,5 @@ element-text {
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
-    font:                        "Noto Sans 12";  // Modern font
-}
-
-// New Feature: Footer //
-footer {
-    enabled:                     true;
-    padding:                     1em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-    text:                        "Press Enter to select, Esc to exit";
-    font:                        "Noto Sans 10";
-    horizontal-align:            0.5;
-    vertical-align:              0.5;
-}
-mainbox {
-    children:                    [ "wallbox" , "listbox" , "footer" ];
 }
 

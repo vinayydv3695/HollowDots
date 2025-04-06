@@ -1,11 +1,17 @@
 * {
-    main-bg:            #1e1e1e80;  /* Transparent dark background color */
-    main-fg:            #ffffff;    /* White foreground color */
-    main-br:            #bbbbbb;    /* Light gray for borders or highlights */
-    main-ex:            #888888;    /* Medium gray for accents or highlights */
-    select-bg:          #44444480;  /* Transparent darker gray for selected backgrounds */
-    select-fg:          #ffffff;    /* White for selected foreground text */
-    separatorcolor:     transparent; /* Transparent separator */
-    border-color:       transparent; /* Transparent border color */
-}
+    // Main colors
+    background-color:   #11111be6;  // main-bg: semi-transparent black
+    text-color:         #cdd6f4ff;  // main-fg: light grayish blue
+    border-color:       transparent; // border-color: transparent
 
+    // Selection colors
+    selected-background-color: #b4befeff; // select-bg: light blue
+    selected-text-color:       #11111bff; // select-fg: dark black
+
+    // Separator and border colors
+    separatorcolor:    transparent; // separatorcolor: transparent
+
+    // Accent colors
+    accent-color:       #cba6f7ff;  // main-br: light purple
+    urgent-color:       #f5e0dcff;  // main-ex: light pink
+}

@@ -15,30 +15,35 @@ window {
     transparency:                "real";
     cursor:                      "default";
     spacing:                     0em;
-    padding:                     0em;
-    border:                      2px solid @border-color;
-    border-radius:               0px;  // Sharp edges
-    border-color:                @main-br;
-    background-color:            @main-bg;
-    shadow:                      true;
-    shadow-color:                rgba(0, 0, 0, 0.5);
+    padding:                     1em;          // Added padding for better spacing
+    
+    border-radius:               12px;        // Rounded corners
+    border-color:                @main-br;    // Border color using main-br
+    background-color:            @main-bg;    // Semi-transparent black background
 }
+
 mainbox {
     enabled:                     true;
     orientation:                 horizontal;
     children:                    [ "dummy", "frame", "dummy" ];
     background-color:            transparent;
+    spacing:                     0.5em;       // Added spacing for better layout
 }
+
 frame {
     children:                    [ "listview" ];
     background-color:            transparent;
+     // Added border for edges
+    border-radius:               8px;         // Rounded corners
+    padding:                     0.5em;       // Added padding for better spacing
 }
+
 
 // Lists //
 listview {
     enabled:                     true;
-    spacing:                     4em;
-    padding:                     4em;
+    spacing:                     0.5em;       // Reduced spacing for compact layout
+    padding:                     0.5em;       // Reduced padding for compact layout
     columns:                     10;
     lines:                       1;
     dynamic:                     false;
@@ -47,57 +52,47 @@ listview {
     reverse:                     true;
     cursor:                      "default";
     background-color:            transparent;
-    text-color:                  @main-fg;
+    text-color:                  @main-fg;    // Light grayish blue text
+    border-radius:               6px;         // Rounded corners for listview
 }
+
 dummy {
     width:                       2em;
     expand:                      false;
     background-color:            transparent;
 }
 
+
 // Elements //
 element {
     enabled:                     true;
-    spacing:                     0em;
-    padding:                     0.5em;  // Added padding for better spacing
+    spacing:                     0.5em;       // Added spacing for better layout
+    padding:                     0.5em;       // Added padding for better spacing
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  @main-fg;
-    border:                      1px solid @border-color;  // Added border for each element
-    border-radius:               0px;  // Sharp edges
+    text-color:                  @main-fg;    // Light grayish blue text
+    border-radius:               6px;         // Rounded corners for elements
+ // Added border for edges
 }
+
 element selected.normal {
-    background-color:            @select-bg;
-    text-color:                  @select-fg;
+    background-color:            @select-bg;  // Light blue background for selected items
+    text-color:                  @select-fg;  // Dark black text for selected items
 }
+
 element-icon {
     cursor:                      inherit;
-    size:                        10em;
-    padding:                     0.5em;  // Added padding for icons
+    size:                        1.5em;       // Adjusted icon size for better proportion
     background-color:            transparent;
     text-color:                  inherit;
     expand:                      false;
 }
+
 element-text {
     vertical-align:              0.5;
     horizontal-align:            0.5;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
+    font:                        "JetBrainsMono Nerd Font 10"; // Consistent font
 }
-
-// New Feature: Footer //
-footer {
-    enabled:                     true;
-    padding:                     1em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-    text:                        "Press Enter to select, Esc to exit";
-    font:                        "JetBrainsMono Nerd Font 8";
-    horizontal-align:            0.5;
-    vertical-align:              0.5;
-}
-mainbox {
-    children:                    [ "dummy" , "frame" , "dummy" , "footer" ];
-}
-

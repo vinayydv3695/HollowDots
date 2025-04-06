@@ -14,20 +14,18 @@ window {
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border:                      2px solid @border-color;
-    border-radius:               0px;  // Sharp edges
-    border-color:                @main-br;
-    background-color:            @main-bg;
-    shadow:                      true;
-    shadow-color:                rgba(0, 0, 0, 0.5);
+    background-color:            transparent;  // Make the window background transparent
+    border-radius:               12px;         // Rounded corners
+    border:                      2px solid @main-br; // Edge (border) with main-br color
 }
+
 mainbox {
     enabled:                     true;
     spacing:                     0em;
     padding:                     0em;
     orientation:                 horizontal;
     children:                    [ "listbox" ];
-    background-color:            transparent;
+    background-color:            transparent;  // Make the mainbox background transparent
 }
 
 // Lists //
@@ -36,11 +34,12 @@ listbox {
     spacing:                     0em;
     orientation:                 horizontal;
     children:                    [ "listview" ];
-    background-color:            transparent;
+    background-color:            transparent;  // Make the listbox background transparent
 }
+
 listview {
     padding:                     2px;
-    spacing:                     0em;
+    spacing:                     0.5em;        // Add spacing between elements
     enabled:                     true;
     columns:                     1;
     cycle:                       true;
@@ -51,44 +50,45 @@ listview {
     fixed-height:                false;
     fixed-columns:               false;
     cursor:                      "default";
-    background-color:            transparent;
+    background-color:            transparent;  // Make the listview background transparent
 }
 
 // Elements //
 element {
     orientation:                 vertical;
     enabled:                     true;
-    spacing:                     0em;
-    padding:                     0.5em;  // Added padding for better spacing
+    spacing:                     0.5em;        // Add spacing inside elements
+    padding:                     0.5em;        // Add padding inside elements
     cursor:                      pointer;
-    background-color:            transparent;
-    border:                      1px solid @border-color;  // Added border for each element
-    border-radius:               0px;  // Sharp edges
+    background-color:            transparent;  // Make the element background transparent
+    border-radius:               8px;          // Rounded corners for elements
+    border:                      1px solid @main-br; // Edge (border) for elements
 }
+
 element selected.normal {
-    background-color:            @main-fg;
+    background-color:            @select-bg;   // Use select-bg for selected elements
+    text-color:                 @select-fg;   // Use select-fg for selected text
+    border:                      1px solid @main-br; // Edge (border) for selected elements
 }
+
 element-icon {
     cursor:                      inherit;
-    background-color:            transparent;
-    padding:                     0.5em;  // Added padding for icons
+    background-color:            transparent;  // Make the icon background transparent
+    size:                        24px;         // Set icon size
 }
+
 element-text {
-    enabled:                     false;
+    enabled:                     true;         // Enable text
+    text-color:                 @main-fg;     // Use main-fg for text
+    font:                       "Fira Code 12"; // Set font
+    vertical-align:              0.5;          // Center text vertically
+    horizontal-align:            0.5;          // Center text horizontally
 }
 
-// New Feature: Footer //
-footer {
+// Separator //
+separator {
     enabled:                     true;
-    padding:                     1em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-    text:                        "Press Enter to select, Esc to exit";
-    font:                        "JetBrainsMono Nerd Font 8";
-    horizontal-align:            0.5;
-    vertical-align:              0.5;
+    padding:                    0.5em;
+    background-color:            transparent;  // Make the separator background transparent
+    border:                      1px solid @main-br; // Edge (border) for separator
 }
-mainbox {
-    children:                    [ "listbox" , "footer" ];
-}
-

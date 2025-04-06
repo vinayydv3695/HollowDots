@@ -1,14 +1,3 @@
-* {
-    main-bg:            #1E1E2E;     // Darker background
-    main-fg:            #FFD700;     // Bright yellow foreground
-    main-br:            #FF69B4;     // Hot pink border
-    main-ex:            #00FFFF;     // Cyan accent
-    select-bg:          #FF4500;     // Orange-red selection background
-    select-fg:          #FFFFFF;     // White selection foreground
-    separatorcolor:     #FF6347;     // Tomato separator color
-    border-color:       #FF69B4;     // Hot pink border color
-}
-
 // Config //
 configuration {
     modi:                        "drun";
@@ -19,23 +8,22 @@ configuration {
 
 @theme "~/.config/rofi/theme.rasi"
 
+
 // Main //
 window {
-    enabled:                     false;
-    fullscreen:                  true;
+    enabled:                     true;
+    fullscreen:                  false;
     width:                       40em;
     height:                      20em;
     transparency:                "real";
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border:                      2px solid @border-color;
-    border-radius:               0px;  // Sharp edges
-    border-color:                @main-br;
+    border:                      1em;
+    border-radius:               0em;
+    border-color:                #00000003;
     background-color:            @main-bg;
     background-image:            url("~/.config/rofi/assets/wallbash_mode.png", width);
-    shadow:                      true;
-    shadow-color:                rgba(0, 0, 0, 0.5);
 }
 mainbox {
     enabled:                     true;
@@ -43,6 +31,7 @@ mainbox {
     children:                    [ "dummy" , "listview" ];
     background-color:            transparent;
 }
+
 
 // Lists //
 listview {
@@ -65,6 +54,7 @@ dummy {
     background-color:            transparent;
 }
 
+
 // Elements //
 element {
     enabled:                     true;
@@ -73,8 +63,7 @@ element {
     cursor:                      pointer;
     background-color:            @main-bg;
     text-color:                  @main-fg;
-    border:                      1px solid @border-color;  // Added border for each element
-    border-radius:               0px;  // Sharp edges
+    border-radius:               0em;
 }
 element selected.normal {
     background-color:            @select-bg;

@@ -24,14 +24,6 @@ decoration {
     rounding = 10
     drop_shadow = false
 
-    blur {
-        enabled = yes
-        size = 6
-        passes = 3
-        new_optimizations = on
-        ignore_opacity = on
-        xray = false
-    }
-}
+    
 
-layerrule = blur,waybar
+layerrule = notset,waybar

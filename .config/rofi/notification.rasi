@@ -8,6 +8,7 @@ configuration {
 
 @theme "~/.config/rofi/theme.rasi"
 
+
 // Main //
 window {
     enabled:                     true;
@@ -18,13 +19,11 @@ window {
     cursor:                      "default";
     spacing:                     0em;
     padding:                     0em;
-    border:                      2px solid @border-color;
-    border-radius:               0px;  // Sharp edges
-    border-color:                @main-br;
+    border:                      0em;
+    border-radius:               0em;
+    border-color:                transparent;
     background-color:            transparent;
     background-image:            url("~/.config/rofi/assets/notification.png", width);
-    shadow:                      true;
-    shadow-color:                rgba(0, 0, 0, 0.5);
 }
 mainbox {
     enabled:                     true;
@@ -68,6 +67,7 @@ dummy2 {
     background-color:            transparent;
 }
 
+
 // Elements //
 element {
     enabled:                     true;
@@ -76,16 +76,14 @@ element {
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
-    border-bottom:               1px solid @border-color;
+    border-radius:               0em;
 }
 element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
 }
 element-icon {
-    enabled:                     true; // Enable icons
-    size:                        1.5em; // Set icon size
-    padding:                     0.5em; // Adjust icon padding
+    enabled:                     false;
 }
 element-text {
     vertical-align:              0.5;
@@ -93,21 +91,5 @@ element-text {
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
-    font:                        "JetBrainsMono Nerd Font 9";  // Modern font
-}
-
-// New Feature: Footer //
-footer {
-    enabled:                     true;
-    padding:                     1em;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-    text:                        "Press Enter to select, Esc to exit";
-    font:                        "JetBrainsMono Nerd Font 8";
-    horizontal-align:            0.5;
-    vertical-align:              0.5;
-}
-mainbox {
-    children:                    [ "dummy" , "frame" , "footer" ];
 }
 
