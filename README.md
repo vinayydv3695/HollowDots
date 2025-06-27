@@ -4,7 +4,7 @@ _"No cost too great..."_
 
 _A minimal Hyprland configuration optimized for productivity_
 
-![Showcase](Screenshots/hyprlock_preview.png)
+![Showcase](assets/Screenshots/hyprlock_preview.png)
 
 ---
 
@@ -23,7 +23,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### Lock Screen
 
-![Hyprlock](Screenshots/hyprlock_preview.png)
+![Hyprlock](assets/Screenshots/hyprlock_preview.png)
 
 - Custom blur effect
 - Time/date display
@@ -31,7 +31,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### Terminal Workflow
 
-![Ghostty](Screenshots/ghostty.png)
+![Ghostty](assets/Screenshots/ghostty.png)
 
 - Clean directory listing
 - Permission visibility
@@ -39,7 +39,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### Code Editing
 
-![Neovim](Screenshots/neovim.png)
+![Neovim](assets/Screenshots/neovim.png)
 
 - LSP support
 - Syntax highlighting
@@ -47,7 +47,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### File Management
 
-![Yazi](Screenshots/yazi.png)
+![Yazi](assets/Screenshots/yazi.png)
 
 - File previews
 - Keyboard navigation
@@ -55,7 +55,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### App Launcher
 
-![Rofi](Screenshots/rofi.png)
+![Rofi](assets/Screenshots/rofi.png)
 
 - Application categories
 - Fuzzy search
@@ -63,7 +63,7 @@ _A minimal Hyprland configuration optimized for productivity_
 
 ### System Info
 
-![Fastfetch](Screenshots/fastfetch.png)
+![Fastfetch](assets/Screenshots/fastfetch.png)
 
 - Hardware overview
 - Package counts
