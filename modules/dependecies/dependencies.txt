@@ -1,0 +1,36 @@
+# Core
+hyprland
+waybar
+rofi
+dunst
+swaybg
+swayidle
+swaylock
+
+# Terminals
+kitty
+ghostty
+
+# Applications
+brave
+neovim
+yazi
+thunar
+
+# Utilities
+playerctl
+pamixer
+brightnessctl
+networkmanager
+bluez
+pulseaudio
+
+# Fonts
+ttf-font-awesome
+ttf-jetbrains-mono
+noto-fonts
+noto-fonts-emoji
+
+# Python (for pywal)
+python-pywal
+python-pillow
