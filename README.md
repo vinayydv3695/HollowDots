@@ -4,7 +4,7 @@
 
 A clean and minimal Hyprland configuration tailored for power users who value **performance**, **aesthetic**, and **workflow efficiency**.
 
-![Showcase](assets/Screenshots/hyprlock_preview.png)
+![Showcase](assets/Screenshots/main.png)
 
 ---
 
@@ -48,6 +48,19 @@ A clean and minimal Hyprland configuration tailored for power users who value **
 - Syntax highlighting
 - Autocomplete with LSP
 - File tree navigation
+
+Here’s a 4-line section you can add for showcasing your **SDDM theme** under the screenshots section:
+
+---
+
+### 🖼️ Login Display (SDDM)
+
+![SDDM](assets/Screenshots/sddm.png)
+
+- Custom theme with blur and dark mode
+- Time + user display matching Hyprland aesthetics
+
+---
 
 ### 🗂 File Management
 
