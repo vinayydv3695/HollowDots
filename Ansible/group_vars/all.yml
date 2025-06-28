@@ -1,0 +1,109 @@
+# group_vars/all.yml
+---
+# Path Configuration
+user_home: "/home/{{ ansible_user_id }}"
+config_dir: "{{ user_home }}/.config"
+backup_dir: "{{ user_home }}/.config_backup_{{ ansible_date_time.date }}"
+theme_dir: "{{ user_home }}/.themes"
+
+# ===== Core Hyprland Stack =====
+hyprland_core:
+  - hyprland
+  - waybar
+  - rofi-wayland
+  - dunst
+  - swaybg
+  - swayidle
+  - swaylock-effects
+  - wlogout
+  - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gtk
+  - qt5-wayland
+  - qt6-wayland
+  - qt5ct
+  - qt6ct
+
+# ===== Display/GPU =====
+display_stack:
+  - mesa
+  - vulkan-intel # Intel iGPU
+  - vulkan-radeon # AMD GPU
+  - nvidia-dkms # Nvidia GPU (uncomment if needed)
+  - libva-intel-driver
+  - libva-mesa-driver
+  - vulkan-icd-loader
+  - lib32-vulkan-icd-loader # For Steam compatibility
+
+# ===== Audio =====
+audio_packages:
+  - pipewire
+  - pipewire-alsa
+  - pipewire-pulse
+  - pipewire-jack
+  - wireplumber
+  - pavucontrol
+  - pamixer
+  - alsa-utils
+
+# ===== Input/Utilities =====
+input_utils:
+  - libinput
+  - brightnessctl
+  - wl-clipboard
+  - grim
+  - slurp
+  - swappy
+  - cliphist
+  - wf-recorder # Screen recording
+  - hyprpicker # Color picker
+  - hyprshot # Screenshot tool
+
+# ===== Fonts =====
+fonts:
+  - ttf-jetbrains-mono
+  - ttf-font-awesome
+  - noto-fonts
+  - noto-fonts-emoji
+  - ttf-nerd-fonts-symbols
+  - noto-fonts-cjk # Asian character support
+
+# ===== Terminal/Shell =====
+terminal_tools:
+  - kitty
+  - foot
+  - zsh
+  - zsh-theme-powerlevel10k-git
+  - zsh-syntax-highlighting
+  - zsh-autosuggestions
+  - tmux
+  - neovim
+
+# ===== File Managers =====
+file_managers:
+  - thunar
+  - thunar-archive-plugin
+  - tumbler # Thumbnail support
+  - yazi
+  - gvfs # Trash/recent files support
+
+# ===== Additional Hyprland Utilities =====
+hyprland_utils:
+  - hyprpaper # Wallpaper daemon
+  - hypridle # Idle management
+  - hyprcursor # Cursor themes
+  - hyprland-per-window-layout-git # Advanced layouts
+  - wlr-randr # Display configuration
+  - wayland-protocols
+  - wayland-utils
+
+# ===== AUR Packages =====
+aur_packages:
+  - yay
+  - brave-bin
+  - swaylock-effects-git
+  - wlogout-emoji-git
+  - hyprland-nvidia-git # For Nvidia users
+  - hyprland-autoname-workspaces-git # Dynamic workspace naming
+
+# ===== Combined Package Lists =====
+all_packages: "{{ hyprland_core + display_stack + audio_packages + input_utils + fonts + terminal_tools + file_managers + hyprland_utils }}"
