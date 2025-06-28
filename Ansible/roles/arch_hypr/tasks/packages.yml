@@ -1,0 +1,36 @@
+- name: Install base dependencies
+  ansible.builtin.pacman:
+    name:
+      - base-devel
+      - git
+      - python-pip
+    state: present
+  become: yes
+
+- name: Install yay (AUR helper)
+  ansible.builtin.command: >
+    bash -c "git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin &&
+    cd /tmp/yay-bin && makepkg -si --noconfirm"
+  args:
+    creates: /usr/bin/yay
+  become: yes
+
+- name: Install core packages
+  ansible.builtin.pacman:
+    name: "{{ core_packages }}"
+    state: present
+    update_cache: yes
+  become: yes
+
+- name: Install AUR packages
+  ansible.builtin.command: yay -S --needed --noconfirm {{ item }}
+  loop: "{{ aur_packages }}"
+  become: yes
+
+- name: Install custom packages
+  ansible.builtin.pacman:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ custom_packages }}"
+  when: item not in core_packages + aur_packages
+  become: yes

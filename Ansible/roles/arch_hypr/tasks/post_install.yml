@@ -1,0 +1,13 @@
+- name: Update font cache
+  ansible.builtin.command: fc-cache -fv
+
+- name: Set default applications
+  ansible.builtin.command: xdg-mime default {{ item.app }} {{ item.mime }}
+  loop:
+    - { app: "brave.desktop", mime: "x-scheme-handler/https" }
+    - { app: "dolphin.desktop", mime: "inode/directory" }
+
+- name: Apply GTK theme
+  ansible.builtin.command: |
+    gsettings set org.gnome.desktop.interface gtk-theme "Rose-Pine"
+    gsettings set org.gnome.desktop.interface icon-theme "Papirus"

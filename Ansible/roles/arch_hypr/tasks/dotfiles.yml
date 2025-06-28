@@ -1,0 +1,22 @@
+- name: Create backup of existing config
+  ansible.builtin.command: |
+    mkdir -p {{ backup_dir }}
+    rsync -a {{ config_dir }}/ {{ backup_dir }}/
+  ignore_errors: yes
+
+- name: Deploy .config files
+  ansible.builtin.copy:
+    src: "files/.config/{{ item }}"
+    dest: "{{ config_dir }}/{{ item }}"
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    mode: preserve
+  loop: "{{ lookup('ansible.builtin.fileglob', 'files/.config/*', wantlist=True) | map('basename') }}"
+
+- name: Deploy Themes
+  ansible.builtin.copy:
+    src: "files/Themes/"
+    dest: "{{ user_home }}/.themes/"
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    mode: preserve

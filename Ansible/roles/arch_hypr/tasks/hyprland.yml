@@ -1,0 +1,20 @@
+- name: Ensure Hyprland directories exist
+  ansible.builtin.file:
+    path: "{{ config_dir }}/hypr/{{ item }}"
+    state: directory
+  loop:
+    - scripts
+    - configs
+
+- name: Set executable permissions for scripts
+  ansible.builtin.file:
+    path: "{{ config_dir }}/hypr/scripts/{{ item }}"
+    mode: "0755"
+  loop: "{{ lookup('ansible.builtin.fileglob', 'files/.config/hypr/scripts/*', wantlist=True) | map('basename') }}"
+
+- name: Enable Hyprland portal
+  ansible.builtin.systemd:
+    name: xdg-desktop-portal-hyprland
+    state: started
+    enabled: yes
+    scope: user
