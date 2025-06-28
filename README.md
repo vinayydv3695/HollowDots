@@ -23,9 +23,9 @@ A clean and minimal Hyprland configuration tailored for power users who value **
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🔒 Lock Screen
+### Lock Screen
 
 ![Hyprlock](assets/Screenshots/hyprlock_preview.png)
 
@@ -33,7 +33,7 @@ A clean and minimal Hyprland configuration tailored for power users who value **
 - Time/date overlay
 - Minimal user greeting
 
-### 🖥️ Terminal Workflow
+### Terminal Workflow
 
 ![Ghostty](assets/Screenshots/ghostty.png)
 
@@ -41,7 +41,7 @@ A clean and minimal Hyprland configuration tailored for power users who value **
 - Git branch display
 - Clean ls colors
 
-### 🧠 Code Editing
+### Code Editing
 
 ![Neovim](assets/Screenshots/neovim.png)
 
@@ -49,46 +49,41 @@ A clean and minimal Hyprland configuration tailored for power users who value **
 - Autocomplete with LSP
 - File tree navigation
 
-Here’s a 4-line section you can add for showcasing your **SDDM theme** under the screenshots section:
-
 ---
 
-### 🖼️ Login Display (SDDM)
+### Login Display (SDDM)
 
 ![SDDM](assets/Screenshots/sddm.png)
 
-- Custom theme with blur and dark mode
+- Queens Gardens Bench (blur and dark mode)
 - Time + user display matching Hyprland aesthetics
 
 ---
 
-### 🗂 File Management
+### File Management
 
 ![Yazi](assets/Screenshots/yazi.png)
 
 - File previews
-- Image + video support
-- Fast PKGBUILD inspection
 
-### 🚀 App Launcher
+### App Launcher
 
 ![Rofi](assets/Screenshots/rofi.png)
 
 - Fuzzy search
 - Category icons
-- Light/dark aware
 
-### 📊 System Info
+### System Info
 
 ![Fastfetch](assets/Screenshots/fastfetch.png)
 
 - GPU/CPU/RAM usage
 - Battery + uptime
-- Custom icons + branding
+- Kawai Hornet taking a sip of tea
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### 1. Clone Repository
 
@@ -112,7 +107,7 @@ systemctl --user enable xdg-desktop-portal-hyprland
 
 ---
 
-## ⌨️ Keybinds (Super = Win key)
+## Keybinds (Super = Win key)
 
 | Keybind       | Action                |
 | ------------- | --------------------- |
@@ -123,11 +118,11 @@ systemctl --user enable xdg-desktop-portal-hyprland
 | Super + P     | Take a Screenshot     |
 | Super + L     | Lock the Screen       |
 
-🔎 Full list in `~/.config/hypr/hyprland.conf`
+Full list in `~/.config/hypr/hyprland.conf`
 
 ---
 
-## ⚙️ Customization
+## Customization
 
 ### Update Configs
 
@@ -143,7 +138,7 @@ systemctl --user enable xdg-desktop-portal-hyprland
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 > **Q:** How do I change the wallpaper?
 
