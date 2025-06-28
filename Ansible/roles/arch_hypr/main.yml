@@ -1,0 +1,15 @@
+- name: Install base packages
+  include_tasks: packages.yml
+  tags: packages
+
+- name: Deploy dotfiles
+  include_tasks: dotfiles.yml
+  tags: dotfiles
+
+- name: Configure Hyprland
+  include_tasks: hyprland.yml
+  tags: hyprland
+
+- name: Post-install setup
+  include_tasks: post_install.yml
+  tags: post_install
