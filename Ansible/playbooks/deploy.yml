@@ -1,0 +1,16 @@
+---
+- name: Deploy Hyprland Environment
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Include arch_hypr role
+      ansible.builtin.include_role:
+        name: arch_hypr
+        tasks_from: main
+      vars:
+        install_mode: "full" # Options: full/minimal
+
+  handlers:
+    - include: ../roles/arch_hypr/handlers/main.yml
