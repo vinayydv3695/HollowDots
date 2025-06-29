@@ -1,6 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 
 # Set the directory we want to store zinit and plugins
@@ -15,10 +12,6 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
-
-zinit ice depth=1; zinit light romkatv/powerlevel10k
-
-
 # Load completions
 autoload -Uz compinit && compinit
 
@@ -32,9 +25,14 @@ zinit light zsh-users/zsh-autosuggestions
 # Add in snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-zinit snippet OMZP::command-not-found
 
 zinit cdreplay -q
+
+# Keybindings
+bindkey -e
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
+bindkey '^[w' kill-region
 
 # History
 HISTSIZE=500000
@@ -69,47 +67,29 @@ alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias mkdir='mkdir -p'
-alias ssh='kitten ssh'
+# aliao ssh='kitten ssh'
 alias tree='tree -a -I .git'
 alias cat='bat'
+alias rr='sudo rm -fr'
 alias c='clear' # clear terminal
 alias e='exit'
 alias mkdir='mkdir -p'
 alias vim='nvim'
 alias grep='rg --color=auto'
+alias ssn='sudo shutdown now'
+alias srn='sudo reboot now'
+alias yadav='mullvad'
 
 # Git Aliases
-alias gac='git add . && git commit -m' alias gs='git status'
+alias gac='git add . && git commit -m'
+alias gs='git status'
 alias gpush='git push origin'
 alias lg='lazygit'
 
 # Downloads Aliases
-alias yd='yt-dlp -f "bestvideo[height<=1080]+bestaudio" --embed-chapters --external-downloader aria2c --concurrent-fragments 8 --throttled-rate 100K'
+alias yd='yt-dlp -f "bestvideo+bestaudio" --embed-chapters --external-downloader aria2c --concurrent-fragments 8 --throttled-rate 100K'
 alias td='yt-dlp --external-downloader aria2c -o "%(title)s."'
 alias download='aria2c --split=16 --max-connection-per-server=16 --timeout=600 --max-download-limit=10M --file-allocation=none'
-
-# VPN Aliases
-alias vpn-up='sudo tailscale up --exit-node=raspberrypi --accept-routes'
-alias vpn-down='sudo tailscale down'
-warp ()
-{
-    sudo systemctl "$1" warp-svc
-}
-
-# Other Aliases
-alias apps-space='expac -H M "%011m\t%-20n\t%10d" $(comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base base-devel | sort)) | sort -n'
-alias files-space='sudo ncdu --exclude /.snapshots /'
-alias ld='lazydocker'
-alias cr='mpv --yt-dlp-raw-options=cookies-from-browser=brave'
-alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT1'
-alias y='yazi'
-alias c='c'
-lsfind ()
-{
-    ll "$1" | grep "$2"
-}
-
-# Update and Ugrade Arch
 function up() {
   echo ":: Checking Arch Linux PGP Keyring..."
   local installedver="$(LANG= sudo pacman -Qi archlinux-keyring | grep -Po '(?<=Version         : ).*')"
@@ -133,13 +113,71 @@ function up() {
   else
     sudo pacman -Syu
   fi
+  flatpak update
 }
+
+
+
+# VPN Aliases
+alias vpn-up='sudo tailscale up --exit-node=raspberrypi --accept-routes'
+alias vpn-down='sudo tailscale down'
+warp ()
+{
+    sudo systemctl "$1" warp-svc
+}
+
+# Other Aliases
+alias apps-space='expac -H M "%011m\t%-20n\t%10d" $(comm -23 <(pacman -Qqe | sort) <(pacman -Qqg base base-devel | sort)) | sort -n'
+alias files-space='sudo ncdu --exclude /.snapshots /'
+alias ld='lazydocker'
+alias docker-clean='docker container prune -f && docker image prune -f && docker network prune -f && docker volume prune -f'
+alias crdown='mpv --yt-dlp-raw-options=cookies-from-browser=brave'
+alias cr='cargo run'
+alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT1'
+alias y='yazi'
+lsfind ()
+{
+    ll "$1" | grep "$2"
+}
+
+# X11 Clipboard Aliases `xsel`
+# alias pbcopy='xsel --input --clipboard'
+# alias pbpaste='xsel --output --clipboard'
+
+# Wayland Clipboard Aliases `wl-clipboard`
+alias pbcopy='wl-copy'
+alias pbpaste='wl-paste'
+alias sunsetstop='pkill -x hyprsunset && echo "hyprsunset stopped." || echo "hyprsunset not running."'
+alias sunsetstart='~/.config/hypr/hyprsunset.sh & disown'
 
 
 # Shell Intergrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+eval "$(starship init zsh)"
+eval "$(fnm env --use-on-cd)"
 
 
-# To customize prompt, run p10k configure or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Export Paths
+
+# pnpm
+export PNPM_HOME="/home/zura/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Cargo Bin
+export PATH="$HOME/.cargo/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+#Telecord 
+export PATH="$PATH:/usr/local/bin"
+
+
