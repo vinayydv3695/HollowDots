@@ -1,109 +1,130 @@
-# group_vars/all.yml
 ---
+# User Configuration
+ansible_user: "{{ ansible_user_id | default(lookup('env', 'USER')) }}"
+ansible_user_dir: "/home/{{ ansible_user }}"
+
 # Path Configuration
-user_home: "/home/{{ ansible_user_id }}"
-config_dir: "{{ user_home }}/.config"
-backup_dir: "{{ user_home }}/.config_backup_{{ ansible_date_time.date }}"
-theme_dir: "{{ user_home }}/.themes"
+config_dir: "{{ ansible_user_dir }}/.config"
+backup_dir: "{{ ansible_user_dir }}/.config_backup"
+theme_dir: "{{ ansible_user_dir }}/.themes"
+script_dir: "{{ ansible_user_dir }}/.local/share/bin"
 
-# ===== Core Hyprland Stack =====
-hyprland_core:
-  - hyprland
-  - waybar
-  - rofi-wayland
-  - dunst
-  - swaybg
-  - swayidle
-  - swaylock-effects
-  - wlogout
-  - xdg-desktop-portal-hyprland
-  - xdg-desktop-portal-gtk
-  - qt5-wayland
-  - qt6-wayland
-  - qt5ct
-  - qt6ct
+# Hyprland Configuration
+hyprland:
+  script_path: "{{ script_dir }}"
+  monitor_config: ",1920x1080@60,auto,1"
+  bluetooth_enabled: true
+  night_light_enabled: true
+  night_light_temp: 4500
+  gdk_scale: 1
+  keyboard_layout: "us"
+  follow_mouse: 1
+  natural_scroll: false
+  mouse_sensitivity: 0
+  mouse_no_accel: true
+  numlock_default: true
+  custom_mouse_settings: true
+  custom_mouse_name: "epic mouse V1"
+  custom_mouse_sensitivity: -0.5
+  workspace_swipe: true
+  workspace_swipe_fingers: 5
+  pseudotile: true
+  preserve_split: true
+  master_new_status: "master"
+  vrr: 0
+  disable_logo: true
+  disable_splash: true
+  force_default_wallpaper: 0
+  xwayland_zero_scaling: true
 
-# ===== Display/GPU =====
-display_stack:
-  - mesa
-  - vulkan-intel # Intel iGPU
-  - vulkan-radeon # AMD GPU
-  - nvidia-dkms # Nvidia GPU (uncomment if needed)
-  - libva-intel-driver
-  - libva-mesa-driver
-  - vulkan-icd-loader
-  - lib32-vulkan-icd-loader # For Steam compatibility
+# Package Lists (Conflict-Free)
+packages:
+  base:
+    - base-devel
+    - git
+    - python-pip
 
-# ===== Audio =====
-audio_packages:
-  - pipewire
-  - pipewire-alsa
-  - pipewire-pulse
-  - pipewire-jack
-  - wireplumber
-  - pavucontrol
-  - pamixer
-  - alsa-utils
+  hyprland:
+    - hyprland
+    - waybar
+    - rofi-wayland
+    - dunst
+    - swaybg
+    - swayidle
+    - wlogout
+    - xdg-desktop-portal-hyprland
+    - xdg-desktop-portal-gtk
+    - qt5-wayland
+    - qt6-wayland
+    - qt5ct
+    - qt6ct
+    - hyprpaper
+    - hyprpicker
+    - hyprshot
+    - hyprlock
+    - hypridle
 
-# ===== Input/Utilities =====
-input_utils:
-  - libinput
-  - brightnessctl
-  - wl-clipboard
-  - grim
-  - slurp
-  - swappy
-  - cliphist
-  - wf-recorder # Screen recording
-  - hyprpicker # Color picker
-  - hyprshot # Screenshot tool
+  display:
+    - mesa
+    - vulkan-intel
+    - vulkan-radeon
+    - libva-intel-driver
+    - libva-mesa-driver
+    - vulkan-icd-loader
+    - lib32-vulkan-icd-loader
 
-# ===== Fonts =====
-fonts:
-  - ttf-jetbrains-mono
-  - ttf-font-awesome
-  - noto-fonts
-  - noto-fonts-emoji
-  - ttf-nerd-fonts-symbols
-  - noto-fonts-cjk # Asian character support
+  audio:
+    - pipewire
+    - pipewire-alsa
+    - pipewire-pulse
+    - pipewire-jack
+    - wireplumber
+    - pavucontrol
+    - pamixer
+    - alsa-utils
 
-# ===== Terminal/Shell =====
-terminal_tools:
-  - kitty
-  - foot
-  - zsh
-  - zsh-theme-powerlevel10k-git
-  - zsh-syntax-highlighting
-  - zsh-autosuggestions
-  - tmux
-  - neovim
+  utilities:
+    - libinput
+    - brightnessctl
+    - wl-clipboard
+    - grim
+    - slurp
+    - swappy
+    - cliphist
+    - wf-recorder
+    - polkit-kde-agent
+    - udiskie
+    - network-manager-applet
+    - blueman
+    - bluez
+    - bluez-utils
 
-# ===== File Managers =====
-file_managers:
-  - thunar
-  - thunar-archive-plugin
-  - tumbler # Thumbnail support
-  - yazi
-  - gvfs # Trash/recent files support
+  fonts:
+    - ttf-jetbrains-mono
+    - ttf-font-awesome
+    - noto-fonts
+    - noto-fonts-emoji
+    - ttf-nerd-fonts-symbols
+    - ttf-fira-code
 
-# ===== Additional Hyprland Utilities =====
-hyprland_utils:
-  - hyprpaper # Wallpaper daemon
-  - hypridle # Idle management
-  - hyprcursor # Cursor themes
-  - hyprland-per-window-layout-git # Advanced layouts
-  - wlr-randr # Display configuration
-  - wayland-protocols
-  - wayland-utils
+  terminal:
+    - kitty
+    - foot
+    - zsh
+    - tmux
+    - neovim
+    - fish
 
-# ===== AUR Packages =====
-aur_packages:
-  - yay
-  - brave-bin
-  - swaylock-effects-git
-  - wlogout-emoji-git
-  - hyprland-nvidia-git # For Nvidia users
-  - hyprland-autoname-workspaces-git # Dynamic workspace naming
+  aur:
+    - yay
+    - brave-bin
+    - wlogout-emoji-git
+    - hyprpm
+    - hyprland-nvidia
 
-# ===== Combined Package Lists =====
-all_packages: "{{ hyprland_core + display_stack + audio_packages + input_utils + fonts + terminal_tools + file_managers + hyprland_utils }}"
+# Optional Features
+features:
+  enable_bluetooth: true
+  enable_printing: false
+  enable_flatpak: true
+  enable_docker: false
