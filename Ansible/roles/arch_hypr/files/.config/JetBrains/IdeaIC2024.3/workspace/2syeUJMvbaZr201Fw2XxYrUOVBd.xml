@@ -1,0 +1,446 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="currency-converter-spring" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="38qzb9m0xr8p5" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/AppConfig.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="264">
+              <caret line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;AppConfig.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/ConvertorApp.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="165">
+              <caret line="9" column="13" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;ConvertorApp.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/EuroConvertor.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="198">
+              <caret line="7" column="13" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;EuroConvertor.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/UsdConvertor.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="363">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;UsdConvertor.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/App.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="561">
+              <caret line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;App.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}</tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/CurrencyConvertor.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="66">
+              <caret line="2" column="17" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+        <tab>{&quot;tabTitle&quot;:&quot;CurrencyConvertor.java&quot;,&quot;foregroundColor&quot;:-8336444,&quot;textAttributes&quot;:{&quot;name&quot;:&quot;a&quot;,&quot;children&quot;:[{&quot;name&quot;:&quot;option&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;FOREGROUND&quot;,&quot;value&quot;:&quot;80cbc4&quot;}}]},&quot;icon&quot;:[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,75,10,19,110,111,100,101,115,47,105,110,116,101,114,102,97,99,101,46,115,118,103,18,25,101,120,112,117,105,47,110,111,100,101,115,47,105,110,116,101,114,102,97,99,101,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-34,-46,-26,-50,-2,-1,-1,-1,-1,1,48,1]}</tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "JAVA": {
+      "usageCount": 18,
+      "lastUsed": 1739765334267
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java/me/vinay/App.java&quot;,
+    &quot;/home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java/me/vinay/AppConfig.java&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="18" lastUsage="1739765334267" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java/me/vinay}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test/java/me/vinay}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="currency-converter-spring" />
+            <item name="currency-converter-spring" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="currency-converter-spring" />
+              <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="main" />
+                  <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/main/java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/sourceRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="java" />
+                    <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="me.vinay" />
+                      <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/main/java/me/vinay}" type="462c0819:PsiDirectoryNode" />
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/App.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="App" />
+                        <item name="App" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/AppConfig.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="AppConfig" />
+                        <item name="AppConfig" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/ConvertorApp.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="ConvertorApp" />
+                        <item name="ConvertorApp" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/CurrencyConvertor.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/interface.svg" iconPlugin="com.intellij" isLeaf="true" text="CurrencyConvertor" />
+                        <item name="CurrencyConvertor" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/EuroConvertor.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EuroConvertor" />
+                        <item name="EuroConvertor" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/me/vinay/UsdConvertor.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="UsdConvertor" />
+                        <item name="UsdConvertor" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                    </presentation>
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="test" />
+                  <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/test/java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/testRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="java" />
+                    <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test/java}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/test/java/me/vinay" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="me.vinay" />
+                      <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/src/test/java/me/vinay}" type="462c0819:PsiDirectoryNode" />
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/test/java/me/vinay/AppTest.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="AppTest" />
+                        <item name="AppTest" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                    </presentation>
+                  </presentation>
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/target" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="target" />
+                <item name="dir{file:///home/zura/Personal/4th sem /Frameworks/currency-converter-spring/target}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pom.xml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                <item name="pom.xml" type="ab9368bb:PsiFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33026317" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" show_stripe_button="false" weight="0.5612745" />
+      <window_info anchor="bottom" id="Services" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights bottom="0.5612745" left="0.33026317" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+      <value>Run</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="711" y="333" key="FileChooserDialogImpl" timestamp="1739764704323">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="711" y="333" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1739764704323" />
+    <state width="1818" height="530" key="GridCell.Tab.0.bottom" timestamp="1739433637080">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="530" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1739433637080" />
+    <state width="1818" height="530" key="GridCell.Tab.0.center" timestamp="1739433637079">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="530" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1739433637079" />
+    <state width="1818" height="530" key="GridCell.Tab.0.left" timestamp="1739433637079">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="530" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1739433637079" />
+    <state width="1818" height="530" key="GridCell.Tab.0.right" timestamp="1739433637079">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1818" height="530" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1739433637079" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/CurrencyConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="17" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/UsdConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/EuroConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="7" column="13" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/vinay/ConvertorApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="9" column="13" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

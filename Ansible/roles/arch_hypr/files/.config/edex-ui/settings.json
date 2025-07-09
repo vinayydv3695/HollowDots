@@ -1,0 +1,23 @@
+{
+  "shell": "/usr/bin/zsh",
+  "shellArgs": [],
+  "cwd": "/home/zura/.config/eDEX-UI",
+  "keyboard": "en-US",
+  "theme": "lightblue",
+  "termFontSize": 30,
+  "audio": true,
+  "audioVolume": 1,
+  "disableFeedbackAudio": false,
+  "clockHours": 24,
+  "pingAddr": "1.1.1.1",
+  "port": 3000,
+  "nointro": true,
+  "nocursor": true,
+  "forceFullscreen": true,
+  "allowWindowed": false,
+  "excludeThreadsFromToplist": true,
+  "hideDotfiles": false,
+  "fsListView": true,
+  "experimentalGlobeFeatures": true,
+  "experimentalFeatures": true
+}

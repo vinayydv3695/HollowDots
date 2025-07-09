@@ -1,0 +1,37 @@
+<scheme name="_@user_Atom One Dark (Material)" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2024.3.2.2.0.0</property>
+    <property name="originalScheme">Atom One Dark (Material)</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.chrisrm.idea.MaterialThemeUI</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.4" />
+  <font>
+    <option name="EDITOR_FONT_NAME" value="Menlo" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </font>
+  <font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="12" />
+  </font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="Hack" />
+    <option name="EDITOR_FONT_SIZE" value="13" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="13" />
+  </console-font>
+  <colors>
+    <option name="FILESTATUS_ADDED" value="50a14e" />
+    <option name="FILESTATUS_DELETED" value="a0a1a7" />
+    <option name="FILESTATUS_HIJACKED" value="a626a4" />
+    <option name="FILESTATUS_MERGED" value="4078f2" />
+    <option name="FILESTATUS_MODIFIED" value="986801" />
+    <option name="FILESTATUS_OBSOLETE" value="ffcb6b" />
+    <option name="FILESTATUS_SUPPRESSED" value="383a42" />
+    <option name="FILESTATUS_SWITCHED" value="4078f2" />
+  </colors>
+</scheme>

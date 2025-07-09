@@ -1,0 +1,289 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Delete">
+      <i c="4" l="1743665512530" />
+    </e>
+    <e n="$SelectAll">
+      <i c="30" l="1742272638465" />
+    </e>
+    <e n="$Undo">
+      <i c="100" l="1743478749549" />
+    </e>
+    <e n="CallSaul">
+      <i c="1" l="1739432042241" />
+    </e>
+    <e n="ChangeLaf">
+      <i c="3" l="1739762465483" />
+    </e>
+    <e n="CollapseRegion">
+      <i c="1" l="1739634033605" />
+    </e>
+    <e n="Debug">
+      <i c="1" l="1739636013094" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="4164" l="1743665475307" />
+    </e>
+    <e n="EditorCopy">
+      <i c="44" l="1743664097788" />
+    </e>
+    <e n="EditorCut">
+      <i c="16" l="1742272107921" />
+    </e>
+    <e n="EditorDelete">
+      <i c="2" l="1742221282924" />
+    </e>
+    <e n="EditorDeleteLine">
+      <i c="5" l="1741060291285" />
+    </e>
+    <e n="EditorDown">
+      <i c="263" l="1743053808350" />
+    </e>
+    <e n="EditorEnter">
+      <i c="271" l="1743053973287" />
+    </e>
+    <e n="EditorEscape">
+      <i c="5" l="1742270045024" />
+    </e>
+    <e n="EditorLeft">
+      <i c="425" l="1743053049355" />
+    </e>
+    <e n="EditorLineEnd">
+      <i c="1" l="1738643893023" />
+    </e>
+    <e n="EditorPageDown">
+      <i c="17" l="1738643900711" />
+    </e>
+    <e n="EditorPaste">
+      <i c="42" l="1742272124121" />
+    </e>
+    <e n="EditorRight">
+      <i c="2081" l="1743053971885" />
+    </e>
+    <e n="EditorTab">
+      <i c="6" l="1741060720986" />
+    </e>
+    <e n="EditorTabsEntryPoint">
+      <i c="1" l="1739633940459" />
+    </e>
+    <e n="EditorToggleInsertState">
+      <i c="12" l="1739780695098" />
+    </e>
+    <e n="EditorUp">
+      <i c="214" l="1743053973766" />
+    </e>
+    <e n="ExpandRegion">
+      <i c="22" l="1739634036739" />
+    </e>
+    <e n="ExternalSystem.HideProjectRefreshAction">
+      <i c="1" l="1742268716151" />
+    </e>
+    <e n="ExternalSystem.ProjectRefreshAction">
+      <i c="3" l="1742271529037" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="2" l="1742271525883" />
+    </e>
+    <e n="List-selectNextRow">
+      <i c="5" l="1741062907057" />
+    </e>
+    <e n="List-selectPreviousRow">
+      <i c="4" l="1741062908255" />
+    </e>
+    <e n="MTArcDarkTheme">
+      <i c="1" l="1739633670539" />
+    </e>
+    <e n="MTDarkerTheme">
+      <i c="3" l="1739633702913" />
+    </e>
+    <e n="MTDeepOceanTheme">
+      <i c="4" l="1739634682776" />
+    </e>
+    <e n="MTDraculaTheme">
+      <i c="1" l="1739633668171" />
+    </e>
+    <e n="MTForestTheme">
+      <i c="1" l="1739633657645" />
+    </e>
+    <e n="MTGitHubDarkTheme">
+      <i c="1" l="1739633665953" />
+    </e>
+    <e n="MTMonokaiTheme">
+      <i c="1" l="1739633663751" />
+    </e>
+    <e n="MTMoonlightTheme">
+      <i c="1" l="1739633678312" />
+    </e>
+    <e n="MTNightOwlTheme">
+      <i c="1" l="1739633676560" />
+    </e>
+    <e n="MTOceanicTheme">
+      <i c="2" l="1739633694510" />
+    </e>
+    <e n="MTOneDarkTheme">
+      <i c="1" l="1739633672580" />
+    </e>
+    <e n="MTPalenightTheme">
+      <i c="2" l="1739633691084" />
+    </e>
+    <e n="MTSolarizedDarkTheme">
+      <i c="1" l="1739633674571" />
+    </e>
+    <e n="MTSpaceTheme">
+      <i c="1" l="1739633659634" />
+    </e>
+    <e n="MTSynthwaveTheme">
+      <i c="1" l="1739633680601" />
+    </e>
+    <e n="MTVolcanoTheme">
+      <i c="1" l="1739633661758" />
+    </e>
+    <e n="MaterialTheme.Atom">
+      <i c="1" l="1739633725544" />
+    </e>
+    <e n="MaterialTheme.Menu">
+      <i c="5" l="1739634677649" />
+    </e>
+    <e n="Maven.ReimportProject">
+      <i c="1" l="1742268746360" />
+    </e>
+    <e n="MoreRunToolbarActions">
+      <i c="1" l="1739636014855" />
+    </e>
+    <e n="NewClass">
+      <i c="29" l="1743053954883" />
+    </e>
+    <e n="NewDir">
+      <i c="13" l="1742268908534" />
+    </e>
+    <e n="NextTemplateVariable">
+      <i c="2" l="1739761714506" />
+    </e>
+    <e n="OpenFile">
+      <i c="40" l="1743663988403" />
+    </e>
+    <e n="ProjectFromVersionControl">
+      <i c="1" l="1739764680733" />
+    </e>
+    <e n="RedesignedRunConfigurationSelector">
+      <i c="1" l="1740460247348" />
+    </e>
+    <e n="RenameElement">
+      <i c="10" l="1743665468878" />
+    </e>
+    <e n="RenameFile">
+      <i c="1" l="1742269421390" />
+    </e>
+    <e n="Rerun">
+      <i c="1" l="1739887651770" />
+    </e>
+    <e n="Run">
+      <i c="52" l="1742220277122" />
+    </e>
+    <e n="SaveAll">
+      <i c="9" l="1743478755129" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="30" l="1743478098895" />
+    </e>
+    <e n="ShowSettings">
+      <i c="20" l="1739886529973" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1739887655835" />
+    </e>
+    <e n="ToggleLineBreakpoint">
+      <i c="2" l="1743477938862" />
+    </e>
+    <e n="Vcs.UpdateProject">
+      <i c="1" l="1740458919986" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="5" l="1739887555299" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="6" l="1743478100850" />
+    </e>
+    <e n="com.intellij.application.options.schemes.AbstractSchemeActions$CopyAction">
+      <i c="1" l="1739885942486" />
+    </e>
+    <e n="com.intellij.application.options.schemes.AbstractSchemeActions$ImportAction">
+      <i c="5" l="1739886516104" />
+    </e>
+    <e n="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction">
+      <i c="8" l="1739886513326" />
+    </e>
+    <e n="com.intellij.codeInsight.daemon.NavigateAction">
+      <i c="2" l="1740021663804" />
+    </e>
+    <e n="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$FocusedOnly">
+      <i c="389" l="1743053885457" />
+    </e>
+    <e n="com.intellij.codeInsight.lookup.impl.actions.ChooseItemAction$Replacing">
+      <i c="4" l="1741062090128" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$ClearThisConsoleAction">
+      <i c="1" l="1739887667010" />
+    </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="10" l="1741062324988" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeLookAndFeel$LafChangeAction">
+      <i c="3" l="1739762474810" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="3" l="1741059947285" />
+    </e>
+    <e n="com.intellij.notification.impl.NotificationComponent$MyActionGroup">
+      <i c="1" l="1739634807349" />
+    </e>
+    <e n="com.intellij.notification.impl.NotificationComponent$createPopupAction$4">
+      <i c="1" l="1739634809955" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.impl.MoreActionGroup">
+      <i c="2" l="1739887662635" />
+    </e>
+    <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$7">
+      <i c="4" l="1742268702332" />
+    </e>
+    <e n="com.intellij.openapi.editor.impl.EditorMarkupModelImpl$TrafficLightAction">
+      <i c="16" l="1742270387074" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="2" l="1742271880519" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="689" l="1743053885456" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$5">
+      <i c="19" l="1743675680107" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.SquareAnActionButton">
+      <i c="10" l="1739887686647" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="11" l="1742268731515" />
+    </e>
+    <e n="com.intellij.toolWindow.ShowMoreToolWindowsAction">
+      <i c="2" l="1739636004054" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="20" l="1742270396311" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$ShowOptionsAction">
+      <i c="1" l="1739634200440" />
+    </e>
+    <e n="com.intellij.ui.components.BasicOptionButtonUI$ActionDelegate">
+      <i c="1" l="1739636205979" />
+    </e>
+    <e n="com.mallowigi.idea.notifications.MTAutoResetNotification$2">
+      <i c="1" l="1739633630978" />
+    </e>
+    <e n="com.mallowigi.idea.notifications.MTInstallAtomNotification$2">
+      <i c="1" l="1739633631553" />
+    </e>
+    <e n="com.mallowigi.idea.notifications.MTStatisticsNotification$2">
+      <i c="1" l="1739634800960" />
+    </e>
+  </component>
+</application>

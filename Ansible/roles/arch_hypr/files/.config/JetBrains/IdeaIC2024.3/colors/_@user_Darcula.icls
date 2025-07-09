@@ -1,0 +1,24 @@
+<scheme name="_@user_Darcula" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2024.3.2.2.0.0</property>
+    <property name="originalScheme">Darcula</property>
+  </metaInfo>
+  <colors>
+    <option name="FILESTATUS_ADDED" value="8aff80" />
+    <option name="FILESTATUS_DELETED" value="6272a4" />
+    <option name="FILESTATUS_HIJACKED" value="feff80" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="f89580" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="f780bf" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="f780bf" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="f780bf" />
+    <option name="FILESTATUS_MERGED" value="9580ff" />
+    <option name="FILESTATUS_MODIFIED" value="80ffea" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="80ffea" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="80ffea" />
+    <option name="FILESTATUS_OBSOLETE" value="f89580" />
+    <option name="FILESTATUS_SUPPRESSED" value="6272a4" />
+    <option name="FILESTATUS_SWITCHED" value="f89580" />
+    <option name="FILESTATUS_UNKNOWN" value="9580ff" />
+  </colors>
+</scheme>

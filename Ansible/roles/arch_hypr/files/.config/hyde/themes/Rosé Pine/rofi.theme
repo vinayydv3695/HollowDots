@@ -1,0 +1,11 @@
+* {
+    main-bg:            rgba(0, 0, 0, 0.7);  /* Black with transparency */
+    main-fg:            #e0def4ff;            /* Light foreground */
+    main-br:            #31748fff;            /* Accent color */
+    main-ex:            #c4a7e7cc;            /* Highlighted selection color */
+    select-bg:          rgba(0, 0, 0, 0.5);  /* Transparent black for selected item */
+    select-fg:          #191724ff;            /* Dark text for selected item */
+    separatorcolor:     transparent;           /* No separator */
+    border-color:       transparent;           /* No border */
+}
+
