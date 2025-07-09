@@ -2,15 +2,28 @@
 - name: Deploy Hyprland Environment
   hosts: all
   become: yes
-  gather_facts: yes
+  gather_facts: true # Must be true for variable loading
 
-  tasks:
-    - name: Include arch_hypr role
-      ansible.builtin.include_role:
-        name: arch_hypr
-        tasks_from: main
+  # Force variable loading in this order:
+  vars_files:
+    - "{{ playbook_dir }}/../group_vars/all.yml"
+
+  pre_tasks:
+    - name: Verify variables are loaded
+      debug:
+        msg: "Loaded hyprland_core with {{ hyprland_core | length }} packages"
+      when: hyprland_core is defined
+
+  roles:
+    - role: arch_hypr
       vars:
-        install_mode: "full" # Options: full/minimal
-
-  handlers:
-    - include: ../roles/arch_hypr/handlers/main.yml
+        # Explicitly pass all variable groups
+        hyprland_core: "{{ hyprland_core | default([]) }}"
+        display_stack: "{{ display_stack | default([]) }}"
+        audio_packages: "{{ audio_packages | default([]) }}"
+        input_utils: "{{ input_utils | default([]) }}"
+        fonts: "{{ fonts | default([]) }}"
+        terminal_tools: "{{ terminal_tools | default([]) }}"
+        file_managers: "{{ file_managers | default([]) }}"
+        hyprland_utils: "{{ hyprland_utils | default([]) }}"
+        aur_packages: "{{ aur_packages | default([]) }}"
