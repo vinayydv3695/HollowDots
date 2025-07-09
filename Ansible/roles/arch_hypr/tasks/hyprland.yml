@@ -1,20 +1,95 @@
+---
 - name: Ensure Hyprland directories exist
   ansible.builtin.file:
-    path: "{{ config_dir }}/hypr/{{ item }}"
+    path: "{{ ansible_user_dir }}/.config/hypr/{{ item }}"
     state: directory
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: "0755"
   loop:
     - scripts
     - configs
+    - shaders
+    - layouts
 
-- name: Set executable permissions for scripts
-  ansible.builtin.file:
-    path: "{{ config_dir }}/hypr/scripts/{{ item }}"
+- name: Check for existing Hyprland config
+  ansible.builtin.stat:
+    path: "{{ ansible_user_dir }}/.config/hypr/hyprland.conf"
+  register: existing_config
+
+- name: Backup existing config if exists
+  ansible.builtin.copy:
+    src: "{{ ansible_user_dir }}/.config/hypr/hyprland.conf"
+    dest: "{{ backup_dir }}/hyprland.conf.bak-{{ ansible_date_time.epoch }}"
+    remote_src: yes
+  when: existing_config.stat.exists
+
+- name: Deploy base Hyprland config
+  ansible.builtin.template:
+    src: "hyprland.conf.j2"
+    dest: "{{ ansible_user_dir }}/.config/hypr/hyprland.conf"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
+    mode: "0644"
+
+- name: Deploy Hyprland scripts
+  ansible.builtin.copy:
+    src: "files/scripts/"
+    dest: "{{ ansible_user_dir }}/.config/hypr/scripts/"
+    owner: "{{ ansible_user }}"
+    group: "{{ ansible_user }}"
     mode: "0755"
-  loop: "{{ lookup('ansible.builtin.fileglob', 'files/.config/hypr/scripts/*', wantlist=True) | map('basename') }}"
+    remote_src: false
+  when: lookup('fileglob', 'files/scripts/*') | length > 0
 
-- name: Enable Hyprland portal
-  ansible.builtin.systemd:
-    name: xdg-desktop-portal-hyprland
-    state: started
-    enabled: yes
-    scope: user
+- name: Ensure user D-Bus environment
+  block:
+    - name: Create XDG runtime directory
+      ansible.builtin.file:
+        path: "/run/user/{{ ansible_user_id }}"
+        state: directory
+        owner: "{{ ansible_user_id }}"
+        group: "{{ ansible_user_id }}"
+        mode: "0700"
+      when: ansible_user_id | int > 0
+
+    - name: Generate D-Bus environment
+      ansible.builtin.shell: |
+        dbus-launch --sh-syntax > "{{ ansible_user_dir }}/.dbus-env"
+        chown "{{ ansible_user_id }}:{{ ansible_user_id }}" "{{ ansible_user_dir }}/.dbus-env"
+      args:
+        executable: /bin/bash
+      changed_when: false
+      when: ansible_user_id | int > 0
+
+  rescue:
+    - name: Warn about D-Bus setup failure
+      ansible.builtin.debug:
+        msg: "D-Bus environment setup failed, some services might not work properly"
+
+- name: Enable Hyprland portal service
+  block:
+    - name: Start xdg-desktop-portal-hyprland
+      ansible.builtin.systemd:
+        name: xdg-desktop-portal-hyprland
+        state: started
+        enabled: yes
+        scope: user
+      environment:
+        DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/{{ ansible_user_id }}/bus"
+        XDG_RUNTIME_DIR: "/run/user/{{ ansible_user_id }}"
+      become: true
+      become_user: "{{ ansible_user }}"
+      vars:
+        ansible_become_flags: "--preserve-env=DBUS_SESSION_BUS_ADDRESS,XDG_RUNTIME_DIR"
+
+    - name: Reload user systemd instance
+      ansible.builtin.command: systemctl --user daemon-reload
+      environment:
+        DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/{{ ansible_user_id }}/bus"
+        XDG_RUNTIME_DIR: "/run/user/{{ ansible_user_id }}"
+      become: true
+      become_user: "{{ ansible_user }}"
+      ignore_errors: yes
+
+  when: ansible_user_id | int > 0
