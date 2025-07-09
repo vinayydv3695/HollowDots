@@ -1,22 +1,40 @@
+---
+- name: Ensure backup directory exists
+  ansible.builtin.file:
+    path: "{{ backup_dir }}"
+    state: directory
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    mode: "0755"
+
 - name: Create backup of existing config
-  ansible.builtin.command: |
-    mkdir -p {{ backup_dir }}
-    rsync -a {{ config_dir }}/ {{ backup_dir }}/
+  ansible.builtin.synchronize:
+    src: "{{ config_dir }}/"
+    dest: "{{ backup_dir }}/"
+    recursive: yes
+    owner: yes
+    group: yes
+    times: yes
+  register: config_backup
+  changed_when: config_backup.changed
   ignore_errors: yes
 
 - name: Deploy .config files
   ansible.builtin.copy:
-    src: "files/.config/{{ item }}"
+    src: "{{ role_path }}/files/.config/{{ item }}"
     dest: "{{ config_dir }}/{{ item }}"
     owner: "{{ ansible_user_id }}"
     group: "{{ ansible_user_id }}"
     mode: preserve
-  loop: "{{ lookup('ansible.builtin.fileglob', 'files/.config/*', wantlist=True) | map('basename') }}"
+    remote_src: yes
+  loop: "{{ lookup('ansible.builtin.fileglob', role_path + '/files/.config/*', wantlist=True) | map('basename') }}"
+  when: item not in ['hypr', 'Themes'] # Skip special directories
 
 - name: Deploy Themes
   ansible.builtin.copy:
-    src: "files/Themes/"
-    dest: "{{ user_home }}/.themes/"
+    src: "{{ role_path }}/files/Themes/"
+    dest: "{{ theme_dir }}"
     owner: "{{ ansible_user_id }}"
     group: "{{ ansible_user_id }}"
     mode: preserve
+    remote_src: yes
