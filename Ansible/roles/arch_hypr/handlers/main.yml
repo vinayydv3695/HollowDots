@@ -1,16 +1,22 @@
-# Handlers for service restarts/reloads
+---
+# roles/arch_hypr/handlers/main.yml
+
 - name: Restart PipeWire
   ansible.builtin.systemd:
     name: pipewire
     state: restarted
     scope: user
+  listen: "restart pipewire"
 
 - name: Reload Hyprland
   ansible.builtin.command: hyprctl reload
   when: ansible_local.hyprland.running | default(false)
+  listen: "reload hyprland"
 
 - name: Restart Display Manager
   ansible.builtin.systemd:
     name: sddm
     state: restarted
+    daemon_reload: yes
   become: yes
+  listen: "restart display manager"
