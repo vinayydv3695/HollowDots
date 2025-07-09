@@ -1,13 +1,68 @@
+---
 - name: Update font cache
   ansible.builtin.command: fc-cache -fv
+  become: yes
+  changed_when: false
 
 - name: Set default applications
-  ansible.builtin.command: xdg-mime default {{ item.app }} {{ item.mime }}
-  loop:
-    - { app: "brave.desktop", mime: "x-scheme-handler/https" }
-    - { app: "dolphin.desktop", mime: "inode/directory" }
-
-- name: Apply GTK theme
   ansible.builtin.command: |
-    gsettings set org.gnome.desktop.interface gtk-theme "Rose-Pine"
-    gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+    xdg-mime default {{ item.app }} {{ item.mime }}
+  loop:
+    - { app: "brave-browser.desktop", mime: "x-scheme-handler/https" }
+    - { app: "org.kde.dolphin.desktop", mime: "inode/directory" }
+  become_user: "{{ ansible_user }}"
+  environment:
+    XDG_CURRENT_DESKTOP: "KDE"
+  register: xdg_results
+  failed_when: false
+  changed_when: xdg_results.rc == 0
+
+- name: Apply GTK theme settings
+  block:
+    - name: Verify GTK theme exists
+      ansible.builtin.stat:
+        path: "/usr/share/themes/Rose-Pine"
+      register: gtk_theme_check
+
+    - name: Verify icon theme exists
+      ansible.builtin.stat:
+        path: "/usr/share/icons/Papirus"
+      register: icon_theme_check
+
+    - name: Set GTK theme (if available)
+      ansible.builtin.command: |
+        gsettings set org.gnome.desktop.interface gtk-theme "Rose-Pine"
+      become_user: "{{ ansible_user }}"
+      environment:
+        DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/{{ ansible_user_id }}/bus"
+      when: gtk_theme_check.stat.exists
+
+    - name: Set icon theme (if available)
+      ansible.builtin.command: |
+        gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+      become_user: "{{ ansible_user }}"
+      environment:
+        DBUS_SESSION_BUS_ADDRESS: "unix:path=/run/user/{{ ansible_user_id }}/bus"
+      when: icon_theme_check.stat.exists
+
+- name: Set zsh as default shell
+  block:
+    - name: Get zsh path
+      ansible.builtin.command: which zsh
+      register: zsh_path
+      changed_when: false
+
+    - name: Change default shell to zsh
+      ansible.builtin.command: "chsh -s {{ zsh_path.stdout }} {{ ansible_user }}"
+      become: yes
+      when:
+        - zsh_path.rc == 0
+        - ansible_user_shell != zsh_path.stdout
+
+  rescue:
+    - name: Warn about shell change failure
+      ansible.builtin.debug:
+        msg: "Failed to change default shell to zsh"
+
+- name: Flush handlers
+  meta: flush_handlers
