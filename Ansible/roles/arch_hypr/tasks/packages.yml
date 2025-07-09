@@ -1,11 +1,10 @@
 - name: Install base dependencies
   ansible.builtin.pacman:
-    name:
-      - base-devel
-      - git
-      - python-pip
+    name: "{{ packages.base }}"
     state: present
+    update_cache: yes
   become: yes
+  tags: [packages, base]
 
 - name: Install yay (AUR helper)
   ansible.builtin.command: >
@@ -14,23 +13,54 @@
   args:
     creates: /usr/bin/yay
   become: yes
+  tags: [packages, aur]
 
-- name: Install core packages
+- name: Install Hyprland packages (conflict-safe)
   ansible.builtin.pacman:
-    name: "{{ core_packages }}"
+    name: "{{ packages.hyprland }}"
     state: present
     update_cache: yes
   become: yes
+  tags: [packages, system]
 
-- name: Install AUR packages
-  ansible.builtin.command: yay -S --needed --noconfirm {{ item }}
-  loop: "{{ aur_packages }}"
-  become: yes
-
-- name: Install custom packages
+- name: Install display packages
   ansible.builtin.pacman:
-    name: "{{ item }}"
+    name: "{{ packages.display }}"
     state: present
-  loop: "{{ custom_packages }}"
-  when: item not in core_packages + aur_packages
   become: yes
+  tags: [packages, system]
+
+- name: Install audio packages
+  ansible.builtin.pacman:
+    name: "{{ packages.audio }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install utility packages
+  ansible.builtin.pacman:
+    name: "{{ packages.utilities }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install font packages
+  ansible.builtin.pacman:
+    name: "{{ packages.fonts }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install terminal packages
+  ansible.builtin.pacman:
+    name: "{{ packages.terminal }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Verify zsh installation
+  ansible.builtin.command: which zsh
+  register: zsh_check
+  changed_when: false
+  ignore_errors: yes
+  tags: zsh
