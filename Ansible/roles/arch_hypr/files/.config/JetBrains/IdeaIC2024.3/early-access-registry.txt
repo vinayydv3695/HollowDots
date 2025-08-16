@@ -1,0 +1,8 @@
+i18n.locale
+
+ide.experimental.ui
+true
+idea.plugins.compatible.build
+
+moved.to.new.ui
+true

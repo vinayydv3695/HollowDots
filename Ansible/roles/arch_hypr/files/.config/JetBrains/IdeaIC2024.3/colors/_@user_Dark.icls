@@ -1,0 +1,26 @@
+<scheme name="_@user_Dark" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2024.3.2.2.0.0</property>
+    <property name="originalScheme">Dark</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.intellij</property>
+  </metaInfo>
+  <colors>
+    <option name="FILESTATUS_ADDED" value="72f1b8" />
+    <option name="FILESTATUS_DELETED" value="fe4450" />
+    <option name="FILESTATUS_HIJACKED" value="fede5d" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="ffffff59" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="3edf9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="3edf9" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="3edf9" />
+    <option name="FILESTATUS_MERGED" value="36f9f6" />
+    <option name="FILESTATUS_MODIFIED" value="f92aad" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="b893ce" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="b893ce" />
+    <option name="FILESTATUS_OBSOLETE" value="ffcb6b" />
+    <option name="FILESTATUS_SUPPRESSED" value="848bbd" />
+    <option name="FILESTATUS_SWITCHED" value="fede5d" />
+    <option name="FILESTATUS_UNKNOWN" value="999999" />
+  </colors>
+</scheme>

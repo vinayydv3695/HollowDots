@@ -1,0 +1,39 @@
+- name: Install ZSH and utilities
+  become: yes
+  package:
+    name:
+      - wget
+      - kitty
+      - ghostty
+      - progress
+      - zsh
+      - exfatprogs
+      - starship
+      - zoxide
+      - chaotic-aur/fnm
+      - eza
+      - bat
+      - tree
+      - grep
+      - ripgrep
+      - fzf
+      - yazi
+      - zip
+      - unrar
+      - file-roller
+      - duf
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - zsh
+
+- name: Change default shell to ZSH
+  become: yes
+  shell: chsh -s $(which zsh)
+  args:
+    executable: /bin/bash
+  tags:
+    - dotfiles
+    - install
+    - zsh

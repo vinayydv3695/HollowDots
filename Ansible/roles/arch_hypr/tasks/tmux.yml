@@ -1,0 +1,18 @@
+- name: Install tmux
+  become: yes
+  package:
+    name: tmux
+    state: present
+  tags:
+    - dev
+    - tmux
+
+- name: Clone TPM (Tmux Plugin Manager) repository
+  become: yes
+  git:
+    repo: https://github.com/tmux-plugins/tpm
+    dest: ~/.tmux/plugins/tpm
+  tags:
+    - dev
+    - tmux
+    - tpm

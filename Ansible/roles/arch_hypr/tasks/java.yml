@@ -1,0 +1,90 @@
+---
+- name: Java Development Environment Setup
+  hosts: all
+  become: yes
+  vars:
+    user_home: "{{ ansible_env.HOME }}"
+    sdkman_user: "{{ ansible_user_id }}"
+
+  tasks:
+    - name: Install Java development tools via pacman
+      package:
+        name:
+          - maven
+          - gradle
+        state: present
+      tags:
+        - java
+        - install
+        - pacman
+
+    - name: Install dependencies for SDKMAN
+      package:
+        name:
+          - unzip
+          - zip
+          - curl
+          - git
+        state: present
+      tags:
+        - java
+        - sdkman
+        - dependencies
+
+    - name: Download SDKMAN installation script
+      become: no
+      get_url:
+        url: https://get.sdkman.io
+        dest: /tmp/sdkman_install.sh
+        mode: "0755"
+      tags:
+        - java
+        - sdkman
+        - download
+
+    - name: Install SDKMAN for user
+      become: no
+      shell: bash /tmp/sdkman_install.sh
+      args:
+        creates: "{{ user_home }}/.sdkman/bin/sdkman-init.sh"
+      tags:
+        - java
+        - sdkman
+        - install
+
+    - name: Clean up SDKMAN installation script
+      file:
+        path: /tmp/sdkman_install.sh
+        state: absent
+      tags:
+        - java
+        - sdkman
+        - cleanup
+
+    - name: Install Java 23.0.2-tem using SDKMAN
+      become: no
+      shell: source "{{ user_home }}/.sdkman/bin/sdkman-init.sh" && sdk install java 23.0.2-tem
+      args:
+        executable: /bin/bash
+        creates: "{{ user_home }}/.sdkman/candidates/java/23.0.2-tem"
+      tags:
+        - java
+        - sdkman
+        - java23
+
+    - name: Set Java 23.0.2-tem as default
+      become: no
+      shell: source "{{ user_home }}/.sdkman/bin/sdkman-init.sh" && sdk default java 23.0.2-tem
+      args:
+        executable: /bin/bash
+      tags:
+        - java
+        - sdkman
+        - default
+
+    - name: Display success message
+      debug:
+        msg: "Java development environment has been set up with Maven, Gradle, and SDKMAN. Java 23.0.2-tem has been installed and set as default. To use SDKMAN in this session, run 'source {{ user_home }}/.sdkman/bin/sdkman-init.sh'"
+      tags:
+        - java
+        - info

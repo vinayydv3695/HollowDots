@@ -1,0 +1,50 @@
+- name: Install Hyprland related packages
+  become: yes
+  package:
+    name:
+      - swww
+      - hyprpicker
+      - hyprsunset
+      - hyprlock
+      - hypridle
+      - waypaper
+      - archlinux-xdg-menu
+      - grim
+      - slurp
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - hyprland
+    - hyprland_deps
+
+- name: Install utility packages
+  become: yes
+  package:
+    name:
+      - dunst
+      - rofi-wayland
+      - waybar
+      - wlogout
+      - hyprshot
+      - brightnessctl
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - hyprland
+    - hyprland_deps
+
+- name: Install clipboard and utils
+  become: yes
+  package:
+    name:
+      - wl-clipboard
+      - xclip
+      - cliphist
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - hyprland
+    - hyprland_deps

@@ -1,0 +1,10 @@
+- name: Install Neovim and unzip
+  become: yes
+  package:
+    name:
+      - neovim
+      - unzip
+    state: present
+  tags:
+    - dev
+    - neovim

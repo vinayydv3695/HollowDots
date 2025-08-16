@@ -1,0 +1,25 @@
+---
+- name: Update Hyprland Environment
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Update all packages
+      ansible.builtin.pacman:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Update AUR packages
+      ansible.builtin.command: yay -Syu --needed --noconfirm
+      become: yes
+
+    - name: Sync dotfiles
+      ansible.builtin.synchronize:
+        src: "{{ config_source }}/"
+        dest: "{{ config_dir }}/"
+        recursive: yes
+        delete: yes
+      notify: Reload Hyprland
+
+  handlers:
+    - include: ../roles/arch_hypr/handlers/main.yml

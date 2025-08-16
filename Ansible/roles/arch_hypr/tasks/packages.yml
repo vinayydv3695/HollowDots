@@ -1,0 +1,66 @@
+- name: Install base dependencies
+  ansible.builtin.pacman:
+    name: "{{ packages.base }}"
+    state: present
+    update_cache: yes
+  become: yes
+  tags: [packages, base]
+
+- name: Install yay (AUR helper)
+  ansible.builtin.command: >
+    bash -c "git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin &&
+    cd /tmp/yay-bin && makepkg -si --noconfirm"
+  args:
+    creates: /usr/bin/yay
+  become: yes
+  tags: [packages, aur]
+
+- name: Install Hyprland packages (conflict-safe)
+  ansible.builtin.pacman:
+    name: "{{ packages.hyprland }}"
+    state: present
+    update_cache: yes
+  become: yes
+  tags: [packages, system]
+
+- name: Install display packages
+  ansible.builtin.pacman:
+    name: "{{ packages.display }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install audio packages
+  ansible.builtin.pacman:
+    name: "{{ packages.audio }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install utility packages
+  ansible.builtin.pacman:
+    name: "{{ packages.utilities }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install font packages
+  ansible.builtin.pacman:
+    name: "{{ packages.fonts }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Install terminal packages
+  ansible.builtin.pacman:
+    name: "{{ packages.terminal }}"
+    state: present
+  become: yes
+  tags: [packages, system]
+
+- name: Verify zsh installation
+  ansible.builtin.command: which zsh
+  register: zsh_check
+  changed_when: false
+  ignore_errors: yes
+  tags: zsh

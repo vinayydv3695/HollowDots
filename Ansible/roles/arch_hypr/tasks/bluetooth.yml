@@ -1,0 +1,23 @@
+- name: Install Bluetooth packages
+  become: yes
+  package:
+    name:
+      - bluez
+      - blueman
+      - bluez-utils
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - bluetooth
+
+- name: Enable Bluetooth service
+  become: yes
+  systemd:
+    name: bluetooth
+    enabled: yes
+    state: started
+  tags:
+    - dotfiles
+    - install
+    - bluetooth

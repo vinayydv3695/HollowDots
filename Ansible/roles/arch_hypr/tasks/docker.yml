@@ -1,0 +1,54 @@
+---
+- name: Docker Installation Playbook
+  hosts: all
+  become: yes
+  vars:
+    docker_user: "{{ ansible_user }}"
+
+  tasks:
+    - name: Install Docker and related packages
+      package:
+        name:
+          - docker
+          - docker-compose
+          - docker-buildx
+        state: present
+      tags:
+        - docker
+        - install
+        - pacman
+
+    - name: Enable Docker service
+      systemd:
+        name: docker.service
+        enabled: yes
+      tags:
+        - docker
+        - service
+        - enable
+
+    - name: Start Docker service
+      systemd:
+        name: docker.service
+        state: started
+      tags:
+        - docker
+        - service
+        - start
+
+    - name: Add user to docker group
+      user:
+        name: "{{ docker_user }}"
+        groups: docker
+        append: yes
+      tags:
+        - docker
+        - user
+        - permissions
+
+    - name: Display success message
+      debug:
+        msg: "Docker has been installed and configured. The user {{ docker_user }} has been added to the docker group. You may need to log out and back in for group changes to take effect."
+      tags:
+        - docker
+        - info

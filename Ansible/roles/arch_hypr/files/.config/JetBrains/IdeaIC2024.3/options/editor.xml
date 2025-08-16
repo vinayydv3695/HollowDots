@@ -1,0 +1,52 @@
+<application>
+  <component name="CodeVisionSettings">
+    <option name="codeVisionGroupToPosition">
+      <map>
+        <entry key="change.signature" value="Default" />
+        <entry key="inheritors" value="Default" />
+        <entry key="problems" value="Default" />
+        <entry key="references" value="Default" />
+        <entry key="rename" value="Default" />
+        <entry key="vcs.code.vision" value="Default" />
+      </map>
+    </option>
+    <option name="defaultPosition" value="Right" />
+    <option name="disabledCodeVisionProviderIds">
+      <set>
+        <option value="change.signature" />
+        <option value="inheritors" />
+        <option value="problems" />
+        <option value="references" />
+        <option value="rename" />
+        <option value="vcs.code.vision" />
+      </set>
+    </option>
+    <option name="enabled" value="false" />
+  </component>
+  <component name="DeclarativeInlayHintsSettings">
+    <option name="enabledOptions">
+      <map>
+        <entry key="kotlin.lambdas.hints#hints.lambda.receivers.parameters" value="false" />
+        <entry key="kotlin.lambdas.hints#hints.lambda.return" value="false" />
+        <entry key="kotlin.references.types.hints#hints.type.function.parameter" value="false" />
+        <entry key="kotlin.references.types.hints#hints.type.function.return" value="false" />
+        <entry key="kotlin.references.types.hints#hints.type.property" value="false" />
+        <entry key="kotlin.references.types.hints#hints.type.variable" value="false" />
+      </map>
+    </option>
+    <option name="providerIdToEnabled">
+      <map>
+        <entry key="groovy.implicit.null.argument" value="true" />
+        <entry key="groovy.lambda.parameter.inlay.provider" value="true" />
+        <entry key="groovy.local.variable.implicit.types" value="true" />
+        <entry key="java.implicit.lambdaParameter" value="true" />
+        <entry key="java.implicit.types" value="false" />
+        <entry key="java.method.chains" value="true" />
+        <entry key="kotlin.lambdas.hints" value="false" />
+        <entry key="kotlin.method.chains" value="false" />
+        <entry key="kotlin.references.types.hints" value="false" />
+        <entry key="kotlin.values.hints" value="true" />
+      </map>
+    </option>
+  </component>
+</application>

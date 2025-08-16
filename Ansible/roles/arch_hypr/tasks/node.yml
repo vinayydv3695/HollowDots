@@ -1,0 +1,35 @@
+- name: Install Node.js using fnm
+  become: no
+  command: fnm install 22
+  tags:
+    - dev
+    - nodejs
+    - fnm
+
+- name: Set default Node.js version using fnm
+  become: no
+  command: fnm default 22
+  tags:
+    - dev
+    - nodejs
+    - fnm
+
+- name: Install yarn using pacman
+  become: yes
+  package:
+    name: yarn
+    state: present
+  tags:
+    - dev
+    - nodejs
+    - yarn
+
+- name: Install pnpm using pacman
+  become: yes
+  package:
+    name: pnpm
+    state: present
+  tags:
+    - dev
+    - nodejs
+    - pnpm

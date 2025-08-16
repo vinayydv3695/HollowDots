@@ -1,0 +1,41 @@
+---
+- hosts: localhost
+  vars:
+    source_key: "../.ssh/id_ed25519"
+    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
+    personal: "{{ lookup('env', 'HOME') }}/personal"
+    ansible_user: "vasu"
+
+  tasks:
+    - name: Ensure .ssh directory exists one level up
+      ansible.builtin.file:
+        path: "{{ dest_key | dirname | dirname }}/.ssh"
+        mode: '0700'
+        state: directory
+
+    - name: Install SSH private key
+      ansible.builtin.copy:
+        src: "{{ source_key }}"
+        dest: "{{ dest_key }}"
+        mode: '0600'
+
+    - name: Install SSH public key
+      ansible.builtin.copy:
+        src: "{{ source_key }}.pub"
+        dest: "{{ dest_key }}.pub"
+        mode: '0644'
+
+    - name: Start ssh-agent
+      ansible.builtin.shell: eval "$(ssh-agent -s)"
+      register: ssh_agent_output
+      changed_when: false
+
+    - name: Ensure ssh-agent is running and add SSH private key
+      ansible.builtin.shell: |
+        eval $(ssh-agent -s)
+        ssh-add "{{ dest_key }}"
+      environment:
+        SSH_AUTH_SOCK: "{{ ssh_agent_output.stdout_lines[-1] | regex_search('SSH_AUTH_SOCK=([^;]+);', '\\1') }}"
+        SSH_AGENT_PID: "{{ ssh_agent_output.stdout_lines[-1] | regex_search('SSH_AGENT_PID=([^;]+);', '\\1') }}"
+      register: ssh_add_output
+      changed_when: "'Identity added' in ssh_add_output.stdout"

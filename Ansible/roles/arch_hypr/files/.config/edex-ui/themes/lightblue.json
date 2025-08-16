@@ -1,0 +1,30 @@
+{
+    "colors": {
+        "r": 0,
+        "g": 153,
+        "b": 204,
+        "black": "#000000",
+        "light_black": "#090B0A",
+        "grey": "#0f2e3d"
+    },
+    "cssvars": {
+        "font_main": "United Sans Medium",
+        "font_main_light": "United Sans Light"
+    },
+    "terminal": {
+        "fontFamily": "Fira Mono",
+        "cursorStyle": "underline",
+        "foreground": "#0099cc",
+        "background": "#090B0A",
+        "cursor": "#0099cc",
+        "cursorAccent": "#0099cc",
+        "selection": "rgba(0,153,204,0.3)"
+    },
+    "globe": {
+        "base": "#0099cc",
+        "marker": "#0099cc",
+        "pin": "#0099cc",
+        "satellite": "#0099cc"
+    }
+}
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+# Install curl
+if ! [ -x "$(command -v curl)" ]; then 
+  sudo pacman -S curl --noconfirm
+fi 
+
+# Install Ansible
+if ! [ -x "$(command -v ansible)" ]; then 
+  sudo pacman -S ansible --noconfirm
+fi 
+
+ansible-playbook main.yml --ask-vault-pass --ask-become-pass

@@ -1,0 +1,10 @@
+<application>
+  <component name="GeneralSettings">
+    <option name="confirmOpenNewProject2" value="1" />
+    <option name="supportScreenReaders" value="true" />
+  </component>
+  <component name="Registry">
+    <entry key="moved.to.new.ui" value="true" source="SYSTEM" />
+    <entry key="ide.experimental.ui" value="true" source="SYSTEM" />
+  </component>
+</application>

@@ -1,0 +1,17 @@
+* {
+    // Main colors
+    background-color:   #11111be6;  // main-bg: semi-transparent black
+    text-color:         #cdd6f4ff;  // main-fg: light grayish blue
+    border-color:       transparent; // border-color: transparent
+
+    // Selection colors
+    selected-background-color: #b4befeff; // select-bg: light blue
+    selected-text-color:       #11111bff; // select-fg: dark black
+
+    // Separator and border colors
+    separatorcolor:    transparent; // separatorcolor: transparent
+
+    // Accent colors
+    accent-color:       #cba6f7ff;  // main-br: light purple
+    urgent-color:       #f5e0dcff;  // main-ex: light pink
+}

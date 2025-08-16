@@ -1,0 +1,49 @@
+- name: Install Fira Sans, Font Awesome, Roboto, and DejaVu fonts
+  become: yes
+  package:
+    name:
+      - ttf-fira-sans
+      - ttf-font-awesome
+      - ttf-roboto
+      - ttf-dejavu
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - fonts
+
+- name: Install JetBrains Mono Nerd Font
+  become: yes
+  package:
+    name: ttf-jetbrains-mono-nerd
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - fonts
+
+- name: Install Noto fonts
+  become: yes
+  package:
+    name:
+      - noto-fonts
+      - noto-fonts-cjk
+      - noto-fonts-emoji
+      - noto-fonts-extra
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - fonts
+
+- name: Install Space Mono Nerd Font and Nerd Fonts Symbols
+  become: yes
+  package:
+    name:
+      - ttf-space-mono-nerd
+      - ttf-nerd-fonts-symbols
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - fonts

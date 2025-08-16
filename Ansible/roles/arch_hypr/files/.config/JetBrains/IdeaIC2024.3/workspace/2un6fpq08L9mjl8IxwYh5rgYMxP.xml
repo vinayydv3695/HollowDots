@@ -1,0 +1,593 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="employee-mangment" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf ideFingerprint="6kucz3o7en94" SIDE_TABS_SIZE_LIMIT_KEY="-1">
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="396">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"application.properties","foregroundColor":-8336444,"textAttributes":{"name":"a","children":[{"name":"option","attributes":{"name":"FOREGROUND","value":"80cbc4"}}]},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,85,10,24,102,105,108,101,84,121,112,101,115,47,112,114,111,112,101,114,116,105,101,115,46,115,118,103,18,30,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,112,114,111,112,101,114,116,105,101,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-9,-117,-107,-50,-8,-1,-1,-1,-1,1,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
+          <provider editor-type-id="text-editor" selected="true" />
+        </entry>
+        <tab><![CDATA[{"tabTitle":"schema.sql","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,70,10,20,102,105,108,101,84,121,112,101,115,47,99,117,115,116,111,109,46,115,118,103,18,24,101,120,112,117,105,47,102,105,108,101,84,121,112,101,115,47,116,101,120,116,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-96,-6,-105,-89,6,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/dto/EmployeeDTO.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="66">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"EmployeeDTO.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/controller/EmployeeController.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="304">
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"EmployeeController.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/service/EmployeeService.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="363">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"EmployeeService.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/entity/Employee.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="297">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Employee.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/repository/EmployeeRepository.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="759">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"EmployeeRepository.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+      <file>
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/Application.java">
+          <provider editor-type-id="text-editor" selected="true">
+            <state relative-caret-position="165">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+        <tab><![CDATA[{"tabTitle":"Application.java","foregroundColor":-3484683,"textAttributes":{"name":"a"},"icon":[10,57,99,111,109,46,105,110,116,101,108,108,105,106,46,117,105,46,105,99,111,110,115,46,82,97,115,116,101,114,105,122,101,100,73,109,97,103,101,68,97,116,97,76,111,97,100,101,114,68,101,115,99,114,105,112,116,111,114,18,62,10,15,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,18,21,101,120,112,117,105,47,110,111,100,101,115,47,99,108,97,115,115,46,115,118,103,26,12,99,111,109,46,105,110,116,101,108,108,105,106,40,-63,-37,-81,-57,4,48,0]}]]></tab>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTypeUsageLocalSummary"><![CDATA[{
+  "data": {
+    "Properties": {
+      "usageCount": 7,
+      "lastUsed": 1743662243832
+    },
+    "JAVA": {
+      "usageCount": 24,
+      "lastUsed": 1743662243900
+    },
+    "SQL": {
+      "usageCount": 4,
+      "lastUsed": 1743662243873
+    }
+  }
+}]]></component>
+  <component name="IdeDocumentHistory">{
+  &quot;changedPaths&quot;: [
+    &quot;/home/zura/Personal/Spring-boot/employee-mangment/src/main/resources/application.properties&quot;
+  ]
+}</component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LanguageUsageStatistics">
+    <language id="JAVA">
+      <summary usageCount="24" lastUsage="1743662243900" />
+    </language>
+    <language id="Properties">
+      <summary usageCount="7" lastUsage="1743662243832" />
+    </language>
+  </component>
+  <component name="MavenProjectNavigator">
+    <option name="groupStructurally" value="true" />
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/controller}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/dto}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/repository}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/service}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/resources}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="employee-mangment" />
+            <item name="employee-mangment" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="employee-mangment" />
+              <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/.idea}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.mvn" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".mvn" />
+                <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/.mvn}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/bruno-collection" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="bruno-collection" />
+                <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/bruno-collection}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/src" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="src" />
+                <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/main" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="main" />
+                  <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main}" type="462c0819:PsiDirectoryNode" />
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/main/java" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/sourceRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="java" />
+                    <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="com.employee.employee_mangment" />
+                      <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment}" type="462c0819:PsiDirectoryNode" />
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/controller" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="controller" />
+                        <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/controller}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/controller/EmployeeController.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EmployeeController" />
+                          <item name="EmployeeController" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/dto" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="dto" />
+                        <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/dto}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/dto/EmployeeDTO.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EmployeeDTO" />
+                          <item name="EmployeeDTO" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/entity" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="entity" />
+                        <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/entity}" type="462c0819:PsiDirectoryNode" />
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/repository" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="repository" />
+                        <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/repository}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/repository/EmployeeRepository.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EmployeeRepository" />
+                          <item name="EmployeeRepository" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/service" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/package.svg" iconPlugin="com.intellij" isLeaf="false" text="service" />
+                        <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/java/com/employee/employee_mangment/service}" type="462c0819:PsiDirectoryNode" />
+                        <presentation>
+                          <attributes>
+                            <map>
+                              <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/service/EmployeeService.java" />
+                            </map>
+                          </attributes>
+                          <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="EmployeeService" />
+                          <item name="EmployeeService" type="1a9f42e2:ClassTreeNode" />
+                        </presentation>
+                      </presentation>
+                      <presentation>
+                        <attributes>
+                          <map>
+                            <entry key="filePath" value="$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/Application.java" />
+                          </map>
+                        </attributes>
+                        <data iconPath="expui/nodes/class.svg" iconPlugin="com.intellij" isLeaf="true" text="Application" />
+                        <item name="Application" type="1a9f42e2:ClassTreeNode" />
+                      </presentation>
+                    </presentation>
+                  </presentation>
+                  <presentation>
+                    <attributes>
+                      <map>
+                        <entry key="filePath" value="$PROJECT_DIR$/src/main/resources" />
+                      </map>
+                    </attributes>
+                    <data iconPath="expui/nodes/resourcesRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="resources" />
+                    <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/main/resources}" type="462c0819:PsiDirectoryNode" />
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/main/resources/application.properties" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/fileTypes/properties.svg" iconPlugin="com.intellij" isLeaf="true" text="application.properties" />
+                      <item name="application.properties" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                    <presentation>
+                      <attributes>
+                        <map>
+                          <entry key="filePath" value="$PROJECT_DIR$/src/main/resources/schema.sql" />
+                        </map>
+                      </attributes>
+                      <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="schema.sql" />
+                      <item name="schema.sql" type="ab9368bb:PsiFileNode" />
+                    </presentation>
+                  </presentation>
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/src/test" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text="test" />
+                  <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/src/test}" type="462c0819:PsiDirectoryNode" />
+                </presentation>
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/target" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/excludeRoot.svg" iconPlugin="com.intellij" isLeaf="false" text="target" />
+                <item name="dir{file:///home/zura/Personal/Spring-boot/employee-mangment/target}" type="462c0819:PsiDirectoryNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitattributes" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitattributes" />
+                <item name=".gitattributes" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.gitignore" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.sdkmanrc" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text=".sdkmanrc" />
+                <item name=".sdkmanrc" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mvnw" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/shell.svg" iconPlugin="com.intellij" isLeaf="true" text="mvnw" />
+                <item name="mvnw" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/mvnw.cmd" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/fileTypes/text.svg" iconPlugin="com.intellij" isLeaf="true" text="mvnw.cmd" />
+                <item name="mvnw.cmd" type="ab9368bb:PsiFileNode" />
+              </presentation>
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/pom.xml" />
+                  </map>
+                </attributes>
+                <data iconPath="icons/expui/maven.svg" iconPlugin="com.intellij.java" isLeaf="true" text="pom.xml" />
+                <item name="pom.xml" type="d371aba8:MavenTreeStructureProvider$MavenPomFileNode" />
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15342104" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="Build" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <unified_weights left="0.15342104" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="743" y="317" width="424" height="456" key="FileChooserDialogImpl" timestamp="1743663991083">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="743" y="317" width="424" height="456" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1743663991082" />
+    <state x="472" y="210" key="SettingsEditor" timestamp="1743478117935">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="472" y="210" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1743478117935" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/controller/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/dto/EmployeeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/repository/EmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/employee/employee_mangment/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

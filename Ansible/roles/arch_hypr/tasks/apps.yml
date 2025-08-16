@@ -1,0 +1,62 @@
+- name: Install essential applications using pacman
+  become: yes
+  package:
+    name:
+      - telegram-desktop
+      - yt-dlp
+      - mpv
+      - flatpak
+      - aria2
+      - auto-cpufreq
+      - appimagelauncher
+      - btop
+      - htop
+      - lm_sensors
+      - inxi
+      - anydesk-bin
+      - fastfetch
+      - gparted
+      - hugo
+      - jdk-openjdk
+      - nvtop
+      - onedrive-abraunegg
+      - stremio
+      - tailscale
+      - p7zip
+      - uwufetch
+      - zoom
+      - visual-studio-code-bin
+      - vesktop
+      - qbittorrent-enhanced
+      - cloudflare-warp-bin
+      - ncdu
+      - obsidian
+      - thunar
+      - ffmpeg
+      - deadbeef
+      - imagemagick
+      - gimp
+      - imv
+      - libreoffice-fresh
+      - element-desktop
+      - google-chrome
+      - bc
+      - dolphin
+      - libnotify
+      - v4l-utils
+      - ydotool
+      - pciutils
+      - socat
+      - cowsay
+      - lshw
+      - swappy
+      - playerctl
+      - ventoy
+      - youtube-music-bin
+      - chaotic-aur/rustdesk-bin
+
+    state: present
+  tags:
+    - essentials
+    - install
+    - pacman

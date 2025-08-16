@@ -1,0 +1,12 @@
+<application>
+  <component name="LafManager">
+    <laf themeId="com.github.catppuccin.macchiato.jetbrains" />
+    <lafs-to-previous-schemes>
+      <laf-to-scheme laf="CUSTOM" scheme="_@user_Material Oceanic" />
+      <laf-to-scheme laf="ExperimentalLight" scheme="_@user_Catppuccin Latte (no italics)" />
+      <laf-to-scheme laf="LIGHT_CUSTOM" scheme="_@user_Material Lighter" />
+      <laf-to-scheme laf="SYNTHWAVE" scheme="_@user_Night Owl (Material)" />
+      <laf-to-scheme laf="com.github.catppuccin.macchiato.jetbrains" scheme="_@user_Catppuccin Mocha" />
+    </lafs-to-previous-schemes>
+  </component>
+</application>

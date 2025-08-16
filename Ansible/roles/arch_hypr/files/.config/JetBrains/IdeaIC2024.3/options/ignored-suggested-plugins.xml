@@ -1,0 +1,9 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="Lombook Plugin" />
+      </list>
+    </option>
+  </component>
+</application>

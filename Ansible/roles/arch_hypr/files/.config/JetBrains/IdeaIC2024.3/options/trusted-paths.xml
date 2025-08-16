@@ -1,0 +1,40 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/Personal/4th sem " value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /ADA/ncu-csl230" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/Ecommerce-app" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/MFW-Jan-June-2025" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/booksync" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/currency-converter-spring" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/database" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/ecommerce-app" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/ecommerce_app" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/employee_jdbc" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/greeting-spring-core" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Frameworks/spring-demo" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Spring-boot" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Spring-boot/first-project" value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Spring-boot/firstproject " value="true" />
+        <entry key="$USER_HOME$/Personal/4th sem /Spring-boot/quickstart" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot/Colors" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot/employee-mangment" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot/exmaple" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot/inventory-management" value="true" />
+        <entry key="$USER_HOME$/Personal/Spring-boot/mfo-practical-13" value="true" />
+        <entry key="$USER_HOME$/Personal/example" value="true" />
+        <entry key="$USER_HOME$/Personal/exmaple" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Personal" />
+      </list>
+    </option>
+  </component>
+</application>

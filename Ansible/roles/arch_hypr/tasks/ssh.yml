@@ -1,0 +1,53 @@
+- name: Ensure .ssh directory exists.
+  file:
+    dest: "{{ dest_key | dirname }}"
+    mode: 0700
+    state: directory
+  tags:
+    - dotfiles
+    - install
+    - ssh
+
+- name: Install ssh key
+  copy:
+    src: "{{ source_key }}"
+    dest: "{{ dest_key }}"
+    mode: 0600
+  tags:
+    - dotfiles
+    - install
+    - ssh
+
+- name: Install ssh key public
+  copy:
+    src: "{{ source_key }}.pub"
+    dest: "{{ dest_key }}.pub"
+    mode: 0600
+  tags:
+    - dotfiles
+    - install
+    - ssh
+
+- name: Start ssh-agent
+  shell: eval "$(ssh-agent -s)"
+  register: ssh_agent_output
+  changed_when: false
+  tags:
+    - dotfiles
+    - install
+    - ssh
+
+- name: Ensure ssh-agent is running and add SSH private key
+  environment:
+    SSH_AUTH_SOCK: "{{ lookup('env', 'SSH_AUTH_SOCK') }}"
+    SSH_AGENT_PID: "{{ lookup('env', 'SSH_AGENT_PID') }}"
+  become: true
+  ansible.builtin.shell: |
+    eval $(ssh-agent -s)
+    ssh-add "{{ dest_key }}"
+  register: ssh_agent_output
+  changed_when: "'Identity added' in ssh_agent_output.stdout"
+  tags:
+    - dotfiles
+    - install
+    - ssh

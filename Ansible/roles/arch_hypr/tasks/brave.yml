@@ -1,0 +1,9 @@
+- name: Install Brave
+  become: yes
+  package:
+    name: brave-bin
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - brave

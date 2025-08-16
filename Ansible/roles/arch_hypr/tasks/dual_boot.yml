@@ -1,0 +1,30 @@
+- name: Install ntfs-3g and os-prober
+  become: yes
+  package:
+    name:
+      - ntfs-3g
+      - os-prober
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - dual_boot
+
+- name: Uncomment GRUB_DEFAULT in /etc/default/grub
+  become: yes
+  replace:
+    path: /etc/default/grub
+    regexp: '^#?GRUB_DEFAULT='
+    replace: 'GRUB_DEFAULT='
+  tags:
+    - dotfiles
+    - install
+    - dual_boot
+
+- name: Update GRUB configuration
+  become: yes
+  command: grub-mkconfig -o /boot/grub/grub.cfg
+  tags:
+    - dotfiles
+    - install
+    - dual_boot

@@ -48,13 +48,33 @@ To install the dotfiles, follow these steps:
     reboot
     ```
 
-## Scripts
+## Ansible
 
-This repository comes with a set of scripts to help you manage your dotfiles:
+This repository uses Ansible to manage the dotfiles.
 
-*   `install.sh`: Installs the dotfiles on your system.
-*   `update.sh`: Updates the dotfiles to the latest version.
-*   `uninstall.sh`: Uninstalls the dotfiles from your system.
+### Installation
+
+1.  **Install Ansible:**
+
+    Follow the official Ansible installation guide for your distribution. For Arch Linux, you can use the following command:
+
+    ```bash
+    sudo pacman -S ansible
+    ```
+
+### Usage
+
+*   **Deploy the dotfiles:**
+
+    ```bash
+    ansible-playbook playbooks/main.yml --ask-become-pass
+    ```
+
+*   **Update the system:**
+
+    ```bash
+    ansible-playbook playbooks/update.yml --ask-become-pass
+    ```
 
 ## Customization
 

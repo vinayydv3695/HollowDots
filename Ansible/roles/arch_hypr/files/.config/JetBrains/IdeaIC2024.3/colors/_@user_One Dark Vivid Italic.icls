@@ -1,0 +1,26 @@
+<scheme name="_@user_One Dark Vivid Italic" version="142" parent_scheme="Darcula">
+  <metaInfo>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2024.3.2.2.0.0</property>
+    <property name="originalScheme">One Dark Vivid Italic</property>
+    <property name="partialSave">true</property>
+    <property name="pluginId">com.markskelton.one-dark-theme</property>
+  </metaInfo>
+  <colors>
+    <option name="FILESTATUS_ADDED" value="859900" />
+    <option name="FILESTATUS_DELETED" value="b58900" />
+    <option name="FILESTATUS_HIJACKED" value="d33682" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="b58900" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="cb4b16" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="cb4b16" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="cb4b16" />
+    <option name="FILESTATUS_MERGED" value="6c71c4" />
+    <option name="FILESTATUS_MODIFIED" value="2aa198" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="268bd2" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="268bd2" />
+    <option name="FILESTATUS_OBSOLETE" value="b58900" />
+    <option name="FILESTATUS_SUPPRESSED" value="546e7a" />
+    <option name="FILESTATUS_SWITCHED" value="268bd2" />
+    <option name="FILESTATUS_UNKNOWN" value="d33682" />
+  </colors>
+</scheme>

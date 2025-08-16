@@ -1,0 +1,141 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 15px;
+  min-height: 13px;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#battery,
+#temperature,
+#clock,
+#workspaces,
+#custom-rofi,
+#tray,
+#pulseaudio,
+#backlight,
+#network,
+#custom-right,
+#custom-left {
+  color: #e0e0e0;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 4px 0px 4px 0px;
+  opacity: 1;
+  border: 0px solid #181825;
+}
+
+tooltip {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border-radius: 22px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3a3a3a;
+}
+
+#workspaces button {
+  box-shadow: none;
+  text-shadow: none;
+  padding: 0px;
+  border-radius: 9px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #b0b0b0;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button.active {
+  background: #4a4a4a;
+  color: #ffffff;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-right: 3px;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
+}
+
+#workspaces button:hover {
+  background: #5a5a5a;
+  color: #ffffff;
+  border: none;
+}
+
+#workspaces {
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom-rofi {
+  color: #ffffff;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+#temperature {
+  color: #ff6b6b;
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#temperature.critical {
+  color: #ff4500;
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#backlight {
+  color: #ffd700;
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#pulseaudio {
+  color: #98fb98;
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#battery {
+  color: #7cfc00;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#tray {
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#network {
+  color: #dda0dd;
+  padding-left: 0px;
+  padding-right: 19px;
+}
+
+#clock {
+  color: #f0e68c;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#custom-right {
+  margin-right: 9px;
+  padding-right: 3px;
+  border-radius: 0px 22px 22px 0px;
+}
+
+#custom-left {
+  margin-left: 9px;
+  padding-left: 3px;
+  border-radius: 22px 0px 0px 22px;
+}

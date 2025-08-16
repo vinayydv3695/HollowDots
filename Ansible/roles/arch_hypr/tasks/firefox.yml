@@ -1,0 +1,9 @@
+- name: Install Firefox
+  become: yes
+  package:
+    name: firefox
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - firefox

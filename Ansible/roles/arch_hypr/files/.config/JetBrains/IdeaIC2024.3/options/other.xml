@@ -1,0 +1,83 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value="Dialog" />
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.0" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "FileTemplates.SelectedTemplate": "HTML File",
+    "InstalledPluginsSearchHistory": "nord theme",
+    "JUnitSupport.hidePassedTests": "false",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "8",
+    "MarketplacePluginsSearchHistory": "lom\nlo\n/suggested\nmocha\nmoc",
+    "MemberChooser.copyJavadoc": "false",
+    "MemberChooser.showClasses": "true",
+    "Notification.DisplayName-DoNotAsk-Compiler": "Build finished",
+    "Notification.DoNotAsk-Compiler": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "decompiler.legal.notice.accepted": "true",
+    "defaultJdkConfigured": "true",
+    "enter_selection_count": "5",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "243.26053.27",
+    "file.gist.reindex.count": "2",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "22.0",
+    "fontSizeToResetEditor": "22.0",
+    "got.it.tooltip.new.terminal.promotion.243": "1",
+    "got.it.tooltip.settings.sync.in.settings": "1",
+    "installed.kotlin.plugin.version": "243.26053.27-IJ",
+    "last_opened_file_path": "/home/zura/Personal/Spring-boot/exmaple",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "mt.autoReset": "true",
+    "mt.showInstallAtom": "true",
+    "mt.showStatisticsAgreement": "true",
+    "previousColorScheme": "_@user_Catppuccin Mocha",
+    "promo.framework.suggestion.dismissed.spring.boot": "true",
+    "registry.to.advanced.settings.migration.build": "IC-243.26053.27",
+    "selected.color.option.type": "MARKED_FOR_REMOVAL_ATTRIBUTES"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/zura/Personal/Spring-boot/mfo-practical-13",
+      "/home/zura/Personal/Spring-boot/employee-mangment",
+      "/home/zura/Personal/4th sem /Frameworks/ecommerce_app",
+      "/home/zura/Personal/4th sem /Frameworks/booksync",
+      "/home/zura/Personal/Spring-boot",
+      "/home/zura/Personal/Spring-boot/inventory-management",
+      "/home/zura/Personal/4th sem /Frameworks/database",
+      "/home/zura/Personal/Spring-boot/Colors",
+      "/home/zura/Personal/4th sem /Frameworks/employee_jdbc",
+      "/home/zura/Personal/Spring-boot/exmaple",
+      "/home/zura/Mural.icls",
+      "/home/zura/Neon.icls",
+      "/home/zura/Personal/exmaple",
+      "/home/zura/Personal/4th sem /ADA/ncu-csl230",
+      "/home/zura/Personal/example",
+      "/home/zura/Personal/4th sem /Spring-boot/first-project",
+      "/home/zura/Personal/4th sem /Spring-boot",
+      "/home/zura/Personal/4th sem /Spring-boot/firstproject ",
+      "/home/zura/Personal/4th sem ",
+      "/home/zura/Personal/4th sem /Frameworks/spring-demo",
+      "/home/zura/Personal/4th sem /Frameworks/currency-converter-spring",
+      "/home/zura/Personal/4th sem /Frameworks",
+      "/home/zura/Personal/4th sem /Frameworks/greeting-spring-core",
+      "/home/zura/Personal/4th sem /Frameworks/MFW-Jan-June-2025",
+      "/home/zura/Personal/4th sem /Frameworks/Ecommerce-app",
+      "/home/zura/Personal/4th sem /Frameworks/ecommerce-app"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

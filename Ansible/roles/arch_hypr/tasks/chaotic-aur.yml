@@ -1,0 +1,63 @@
+- name: Receive Chaotic AUR key
+  become: yes
+  ansible.builtin.shell: pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur
+
+- name: Sign Chaotic AUR key
+  become: yes
+  ansible.builtin.shell: pacman-key --lsign-key 3056513887B78AEB
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur
+
+- name: Install Chaotic AUR keyring
+  become: yes
+  ansible.builtin.pacman:
+    name: https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur
+
+- name: Install Chaotic AUR mirrorlist
+  become: yes
+  ansible.builtin.pacman:
+    name: https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur
+
+- name: Append Chaotic AUR repository to pacman.conf
+  become: yes
+  ansible.builtin.lineinfile:
+    path: /etc/pacman.conf
+    line: |
+      [chaotic-aur]
+      Include = /etc/pacman.d/chaotic-mirrorlist
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur
+
+- name: Update package database
+  become: yes
+  ansible.builtin.pacman:
+    update_cache: yes
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - chaotic-aur

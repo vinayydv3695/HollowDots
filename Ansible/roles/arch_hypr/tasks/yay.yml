@@ -1,0 +1,19 @@
+- name: Clone yay repository from AUR
+  git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: /tmp/yay
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
+
+- name: Build and install yay
+  command: makepkg -si --noconfirm
+  args:
+    chdir: /tmp/yay
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
