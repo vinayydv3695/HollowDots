@@ -1,173 +1,93 @@
 # HollowDots
 
-> _"No cost too great..."_
-
-A clean and minimal Hyprland configuration tailored for power users who value **performance**, **aesthetic**, and **workflow efficiency**.
-
-![Showcase](assets/Screenshots/main.png)
-
----
-
-## ✨ Features
-
-- **Hyprland**: Dynamic tiling + smooth animations
-- **Theming**: Light/dark toggle, consistent aesthetics across apps
-- **Terminals**: Ghostty (primary) and Kitty (fallback)
-- **Browser**: Brave with built-in dark mode
-- **File Managers**: Yazi (TUI) + Dolphin (GUI)
-- **Editor**: Neovim preconfigured with LSP, tree view, and themes
-- **Launcher**: Rofi with a theme-matched UI
-- **System Monitor**: Fastfetch with custom icons and color scheme
-- **Lock Screen**: Hyprlock with custom blur and time
-- **Font Setup**: Nerd Fonts patched, ideal for Dev + UI
-
----
+These are my personal dotfiles for Hyprland on Arch Linux. They are designed to be a complete and easy-to-use setup that is both beautiful and efficient.
 
 ## Screenshots
 
-### Lock Screen
+Here is a gallery of my desktop setup:
 
-![Hyprlock](assets/Screenshots/hyprlock_preview.png)
+| | |
+| :---: | :---: |
+| **Main Desktop** | **Fastfetch** |
+| ![Main Desktop](screenshots/main.png) | ![Fastfetch](screenshots/fastfetch.png) |
+| **Neovim** | **Rofi** |
+| ![Neovim](screenshots/neovim.png) | ![Rofi](screenshots/rofi.png) |
+| **Yazi File Manager** | **Ghostty Terminal** |
+| ![Yazi File Manager](screenshots/yazi.png) | ![Ghostty Terminal](screenshots/ghostty.png) |
+| **Brave Browser** | **Hyprland Lock Screen** |
+| ![Brave Browser](screenshots/bravebrowser.png) | ![Hyprland Lock Screen](screenshots/hyprlock_preview.png) |
+| **Logout Options** | **SDDM Login Manager** |
+| ![Logout Options](screenshots/logoutoptions.png) | ![SDDM Login Manager](screenshots/sddm.png) |
 
-- Real-time blur
-- Time/date overlay
-- Minimal user greeting
+## Features
 
-### Terminal Workflow
-
-![Ghostty](assets/Screenshots/ghostty.png)
-
-- Powerline-style prompt
-- Git branch display
-- Clean ls colors
-
-### Code Editing
-
-![Neovim](assets/Screenshots/neovim.png)
-
-- Syntax highlighting
-- Autocomplete with LSP
-- File tree navigation
-
----
-
-### Login Display (SDDM)
-
-![SDDM](assets/Screenshots/sddm.png)
-
-- Queens Gardens Bench (blur and dark mode)
-- Time + user display matching Hyprland aesthetics
-
----
-
-### File Management
-
-![Yazi](assets/Screenshots/yazi.png)
-
-- File previews
-
-### App Launcher
-
-![Rofi](assets/Screenshots/rofi.png)
-
-- Fuzzy search
-- Category icons
-
-### System Info
-
-![Fastfetch](assets/Screenshots/fastfetch.png)
-
-- GPU/CPU/RAM usage
-- Battery + uptime
-- Kawai Hornet taking a sip of tea
-
----
+*   **A Beautiful and Consistent Design:** The entire setup is designed to be visually appealing and consistent, with a custom theme for all applications.
+*   **Efficient Workflow:** The keybindings and scripts are designed to be as efficient as possible, allowing you to get your work done faster.
+*   **Easy to Customize:** The dotfiles are designed to be easy to customize. You can change the theme, keybindings, and other settings to your liking.
 
 ## Installation
 
-### 1. Clone Repository
+To install the dotfiles, follow these steps:
 
-```bash
-git clone https://github.com/vinayydv3695/HollowDots ~/.config/HollowDots
-```
+1.  **Clone the repository:**
 
-### 2. Install Dependencies
+    ```bash
+    git clone https://github.com/your-username/HollowDots.git
+    ```
 
-```bash
-cd ~/.config/HollowDots
-./install.sh
-```
+2.  **Run the installation script:**
 
-### 3. Post-Install Configuration
+    ```bash
+    cd HollowDots
+    ./.local/bin/install.sh
+    ```
 
-```bash
-fc-cache -fv  # Refresh font cache
-systemctl --user enable xdg-desktop-portal-hyprland
-```
+3.  **Reboot your system:**
 
----
+    ```bash
+    reboot
+    ```
 
-## Keybinds (Super = Win key)
+## Scripts
 
-| Keybind       | Action                |
-| ------------- | --------------------- |
-| Super + Enter | Open Ghostty Terminal |
-| Super + D     | Launch Rofi           |
-| Super + E     | Open Dolphin          |
-| Super + Y     | Launch Yazi           |
-| Super + P     | Take a Screenshot     |
-| Super + L     | Lock the Screen       |
+This repository comes with a set of scripts to help you manage your dotfiles:
 
-Full list in `~/.config/hypr/hyprland.conf`
-
----
+*   `install.sh`: Installs the dotfiles on your system.
+*   `update.sh`: Updates the dotfiles to the latest version.
+*   `uninstall.sh`: Uninstalls the dotfiles from your system.
 
 ## Customization
 
-### Update Configs
+To customize the dotfiles, you can create user-specific configuration files in the `~/.config` directory.
 
-```bash
-./update.sh
+*   **Hyprland:** Create a `~/.config/hypr/userprefs.conf` file to add your own Hyprland settings.
+*   **Kitty:** Create a `~/.config/kitty/userprefs.conf` file to add your own Kitty settings.
+
+## Packages
+
+The following packages are required for these dotfiles to work correctly:
+
 ```
-
-### Uninstall
-
-```bash
-./uninstall.sh
+hyprland
+waybar
+rofi-wayland
+dunst
+kitty
+yazi
+neovim
+swaybg
+swayidle
+swaylock
+playerctl
+pamixer
+ttf-jetbrains-mono
+ttf-font-awesome
+noto-fonts
+fastfetch
+ghostty
+wlogout
+blueman
+udiskie
+network-manager-applet
+cliphist
 ```
-
----
-
-## FAQ
-
-> **Q:** How do I change the wallpaper?
-
-````bash
-swww img  < path of your wallpaper >```
-
-> **Q:** Waybar not displaying?
-```bash
-pkill waybar && waybar
-````
-
-> **Q:** How to reset all configs?
-
-```bash
-rm -rf ~/.config/HollowDots && git clone https://github.com/vinayydv3695/HollowDots ~/.config/HollowDots
-```
-
----
-
-## 📜 License
-
-MIT License — free to use, modify, and distribute.
-
----
-
-## ⭐ Credits
-
-- Inspired by [Hyprdots](https://github.com/prasanthrangan/hyprdots)
-- Built with ❤️ by [Vinay](https://github.com/vinayydv3695)
-- Thanks to the **Arch Linux** and **Hyprland** communities
-
-> Star the repo if you find it useful!

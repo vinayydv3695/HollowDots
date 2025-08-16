@@ -1,0 +1,17 @@
+# Ignore Git directory
+.git/
+
+# Ignore user-specific files
+.config/.zsh_history
+
+# Ignore cache and temporary files
+.config/edex-ui/
+.config/JetBrains/
+
+# Ignore backup files
+*.bak
+*~
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
