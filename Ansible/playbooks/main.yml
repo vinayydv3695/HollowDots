@@ -1,7 +1,5 @@
 - hosts: localhost
   vars:
-    source_key: "../.ssh/id_ed25519"
-    dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
     personal: "{{ lookup('env', 'HOME') }}/personal"
     docker_user: "{{ lookup('env', 'USER') }}"
     user_home: "{{ lookup('env', 'HOME') }}"
@@ -13,11 +11,6 @@
         update_cache: yes
 
   tasks:
-    - name: Include SSH tasks
-      include_tasks: ../roles/arch_hypr/tasks/ssh.yml
-      tags:
-        - ssh
-
     - name: Include Yay tasks
       include_tasks: ../roles/arch_hypr/tasks/yay.yml
       tags:
