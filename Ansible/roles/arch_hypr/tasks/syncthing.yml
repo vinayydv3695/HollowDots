@@ -11,7 +11,7 @@
 - name: Enable Syncthing service for user
   become: yes
   systemd:
-    name: syncthing@{{ ansible_user }}.service
+    name: syncthing@{{ lookup('env', 'USER') }}.service
     enabled: yes
     state: started
   tags:

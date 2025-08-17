@@ -19,7 +19,6 @@
   become: no
   community.general.pacman:
     name:
-      - intellij-idea-ultimate-edition
       - bruno-bin
       - localsend-bin
     executable: yay

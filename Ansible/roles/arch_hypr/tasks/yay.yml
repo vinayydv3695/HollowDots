@@ -1,3 +1,16 @@
+- name: Install yay dependencies
+  become: yes
+  pacman:
+    name:
+      - go
+      - fakeroot
+    state: present
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
+
 - name: Clone yay repository from AUR
   git:
     repo: https://aur.archlinux.org/yay.git
@@ -8,10 +21,30 @@
     - aur
     - yay
 
-- name: Build and install yay
-  command: makepkg -si --noconfirm
+- name: Build yay
+  command: makepkg -f --noconfirm
   args:
     chdir: /tmp/yay
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
+
+- name: Find the yay package
+  find:
+    paths: /tmp/yay
+    patterns: "yay-*.pkg.tar.zst"
+  register: yay_package
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
+
+- name: Install yay
+  become: yes
+  command: pacman -U --noconfirm {{ yay_package.files[0].path }}
   tags:
     - dotfiles
     - install

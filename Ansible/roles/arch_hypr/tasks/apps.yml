@@ -1,10 +1,33 @@
-- name: Install essential applications using pacman
+---
+# apps.yml - Install/remove applications for HollowDots setup
+
+- name: Remove conflicting packages
   become: yes
-  package:
+  pacman:
+    name: "{{ item }}"
+    state: absent
+    recurse: yes
+  loop:
+    - qbittorrent # replaced by qbittorrent-enhanced
+    - code # replaced by visual-studio-code-bin
+    - mpv # conflict with mpv-git
+    - mpv-git # conflict with mpv
+    - vesktop # conflict with vesktop-bin
+  failed_when: false
+  tags:
+    - essentials
+    - install
+    - pacman
+
+# -----------------------------
+# Official pacman repository apps
+# -----------------------------
+- name: Install essential applications from pacman
+  become: yes
+  pacman:
     name:
       - telegram-desktop
       - yt-dlp
-      - mpv
       - flatpak
       - aria2
       - auto-cpufreq
@@ -13,7 +36,6 @@
       - htop
       - lm_sensors
       - inxi
-      - anydesk-bin
       - fastfetch
       - gparted
       - hugo
@@ -25,10 +47,6 @@
       - p7zip
       - uwufetch
       - zoom
-      - visual-studio-code-bin
-      - vesktop
-      - qbittorrent-enhanced
-      - cloudflare-warp-bin
       - ncdu
       - obsidian
       - thunar
@@ -39,7 +57,6 @@
       - imv
       - libreoffice-fresh
       - element-desktop
-      - google-chrome
       - bc
       - dolphin
       - libnotify
@@ -52,11 +69,27 @@
       - swappy
       - playerctl
       - ventoy
-      - youtube-music-bin
-      - chaotic-aur/rustdesk-bin
-
     state: present
   tags:
     - essentials
     - install
     - pacman
+
+# -----------------------------
+# AUR/Chaotic packages
+# -----------------------------
+- name: Install AUR/Chaotic applications
+  become: yes
+  pacman:
+    name:
+      - anydesk-bin
+      - qbittorrent-enhanced
+      - cloudflare-warp-bin
+      - youtube-music-bin
+      - chaotic-aur/rustdesk-bin
+      - vesktop-bin
+    state: present
+  tags:
+    - essentials
+    - install
+    - aur

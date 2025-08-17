@@ -1,3 +1,14 @@
+- name: Remove conflicting rust package
+  become: yes
+  pacman:
+    name: rust
+    state: absent
+  ignore_errors: yes
+  tags:
+    - dev
+    - rust
+    - rustup
+
 - name: Install Rustup
   become: yes
   package:

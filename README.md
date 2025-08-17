@@ -2,7 +2,9 @@
 
 These are my personal dotfiles for Hyprland on Arch Linux. They are designed to be a complete and easy-to-use setup that is both beautiful and efficient.
 
-## Screenshots
+---
+## 🖼️ Screenshots
+---
 
 Here is a gallery of my desktop setup:
 
@@ -19,95 +21,52 @@ Here is a gallery of my desktop setup:
 | **Logout Options** | **SDDM Login Manager** |
 | ![Logout Options](screenshots/logoutoptions.png) | ![SDDM Login Manager](screenshots/sddm.png) |
 
-## Features
+## ✨ Features
 
 *   **A Beautiful and Consistent Design:** The entire setup is designed to be visually appealing and consistent, with a custom theme for all applications.
 *   **Efficient Workflow:** The keybindings and scripts are designed to be as efficient as possible, allowing you to get your work done faster.
 *   **Easy to Customize:** The dotfiles are designed to be easy to customize. You can change the theme, keybindings, and other settings to your liking.
 
-## Installation
+## 🚀 Ansible for Automation
 
-To install the dotfiles, follow these steps:
+This repository uses Ansible to automate the setup and management of the dotfiles on Arch Linux.
 
-1.  **Clone the repository:**
+### Prerequisites
 
-    ```bash
-    git clone https://github.com/your-username/HollowDots.git
-    ```
-
-2.  **Run the installation script:**
-
-    ```bash
-    cd HollowDots
-    ./.local/bin/install.sh
-    ```
-
-3.  **Reboot your system:**
-
-    ```bash
-    reboot
-    ```
-
-## Ansible
-
-This repository uses Ansible to manage the dotfiles.
-
-### Installation
-
-1.  **Install Ansible:**
-
-    Follow the official Ansible installation guide for your distribution. For Arch Linux, you can use the following command:
-
+1.  **Install Ansible:** Follow the official Ansible installation guide for your distribution. For Arch Linux, you can use:
     ```bash
     sudo pacman -S ansible
     ```
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/HollowDots.git
+    cd HollowDots
+    ```
+
+### Playbooks
+
+The following playbooks are available in the `playbooks/` directory:
+
+*   **`main.yml`**: This is the main playbook that sets up the entire system. It installs all the necessary packages, copies the dotfiles, and configures the system settings.
+*   **`update.yml`**: This playbook updates the system packages.
+*   **`deploy.yml`**: This playbook deploys the dotfiles to the local machine.
+*   **`ssh-setup.yml`**: This playbook helps in setting up SSH keys for secure remote management.
 
 ### Usage
 
-*   **Deploy the dotfiles:**
+To run a playbook, use the `ansible-playbook` command. For example, to run the main setup playbook:
 
-    ```bash
-    ansible-playbook playbooks/main.yml --ask-become-pass
-    ```
+```bash
+ansible-playbook playbooks/main.yml --ask-become-pass
+```
 
-*   **Update the system:**
+### Security
 
-    ```bash
-    ansible-playbook playbooks/update.yml --ask-become-pass
-    ```
+The Ansible scripts are designed to be secure. The `Ansible/.ssh` directory is ignored by git to prevent accidental exposure of private keys.
 
-## Customization
+## 🎨 Customization
 
 To customize the dotfiles, you can create user-specific configuration files in the `~/.config` directory.
 
 *   **Hyprland:** Create a `~/.config/hypr/userprefs.conf` file to add your own Hyprland settings.
 *   **Kitty:** Create a `~/.config/kitty/userprefs.conf` file to add your own Kitty settings.
-
-## Packages
-
-The following packages are required for these dotfiles to work correctly:
-
-```
-hyprland
-waybar
-rofi-wayland
-dunst
-kitty
-yazi
-neovim
-swaybg
-swayidle
-swaylock
-playerctl
-pamixer
-ttf-jetbrains-mono
-ttf-font-awesome
-noto-fonts
-fastfetch
-ghostty
-wlogout
-blueman
-udiskie
-network-manager-applet
-cliphist
-```

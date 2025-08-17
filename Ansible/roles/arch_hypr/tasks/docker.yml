@@ -1,54 +1,50 @@
----
-- name: Docker Installation Playbook
-  hosts: all
+- name: Install Docker and related packages
   become: yes
-  vars:
-    docker_user: "{{ ansible_user }}"
+  package:
+    name:
+      - docker
+      - docker-compose
+      - docker-buildx
+    state: present
+  tags:
+    - docker
+    - install
+    - pacman
 
-  tasks:
-    - name: Install Docker and related packages
-      package:
-        name:
-          - docker
-          - docker-compose
-          - docker-buildx
-        state: present
-      tags:
-        - docker
-        - install
-        - pacman
+- name: Enable Docker service
+  become: yes
+  systemd:
+    name: docker.service
+    enabled: yes
+  tags:
+    - docker
+    - service
+    - enable
 
-    - name: Enable Docker service
-      systemd:
-        name: docker.service
-        enabled: yes
-      tags:
-        - docker
-        - service
-        - enable
+- name: Start Docker service
+  become: yes
+  systemd:
+    name: docker.service
+    state: started
+  tags:
+    - docker
+    - service
+    - start
 
-    - name: Start Docker service
-      systemd:
-        name: docker.service
-        state: started
-      tags:
-        - docker
-        - service
-        - start
+- name: Add user to docker group
+  become: yes
+  user:
+    name: "{{ docker_user }}"
+    groups: docker
+    append: yes
+  tags:
+    - docker
+    - user
+    - permissions
 
-    - name: Add user to docker group
-      user:
-        name: "{{ docker_user }}"
-        groups: docker
-        append: yes
-      tags:
-        - docker
-        - user
-        - permissions
-
-    - name: Display success message
-      debug:
-        msg: "Docker has been installed and configured. The user {{ docker_user }} has been added to the docker group. You may need to log out and back in for group changes to take effect."
-      tags:
-        - docker
-        - info
+- name: Display success message
+  debug:
+    msg: "Docker has been installed and configured. The user {{ docker_user }} has been added to the docker group. You may need to log out and back in for group changes to take effect."
+  tags:
+    - docker
+    - info

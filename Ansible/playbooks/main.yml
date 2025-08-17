@@ -1,8 +1,11 @@
 - hosts: localhost
   vars:
-    source_key: "./.ssh/id_ed25519"
+    source_key: "../.ssh/id_ed25519"
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_ed25519"
     personal: "{{ lookup('env', 'HOME') }}/personal"
+    docker_user: "{{ lookup('env', 'USER') }}"
+    user_home: "{{ lookup('env', 'HOME') }}"
+    sdkman_user: "{{ lookup('env', 'USER') }}"
   pre_tasks:
     - name: Update Pacman repositories
       become: true
@@ -11,103 +14,103 @@
 
   tasks:
     - name: Include SSH tasks
-      include_tasks: tasks/ssh.yml
+      include_tasks: ../roles/arch_hypr/tasks/ssh.yml
       tags:
         - ssh
 
     - name: Include Yay tasks
-      include_tasks: tasks/yay.yml
+      include_tasks: ../roles/arch_hypr/tasks/yay.yml
       tags:
         - aur
         - yay
 
     #    - name: Include Chaotic AUR tasks
-    #      include_tasks: tasks/chaotic-aur.yml
+    #      include_tasks: ../roles/arch_hypr/tasks/chaotic-aur.yml
     #      tags:
     #        - aur
     #        - chaotic-aur
 
     - name: Include ZSH tasks
-      include_tasks: tasks/zsh.yml
+      include_tasks: ../roles/arch_hypr/tasks/zsh.yml
       tags:
         - zsh
 
     - name: Include Fonts tasks
-      include_tasks: tasks/fonts.yml
+      include_tasks: ../roles/arch_hypr/tasks/fonts.yml
       tags:
         - fonts
 
     - name: Include Hyprland Utils tasks
-      include_tasks: tasks/hyprland-utils.yml
+      include_tasks: ../roles/arch_hypr/tasks/hyprland-utils.yml
       tags:
         - hyprland-utils
 
     - name: Include Audio tasks
-      include_tasks: tasks/audio.yml
+      include_tasks: ../roles/arch_hypr/tasks/audio.yml
       tags:
         - audio
 
     - name: Include Bluetooth tasks
-      include_tasks: tasks/bluetooth.yml
+      include_tasks: ../roles/arch_hypr/tasks/bluetooth.yml
       tags:
         - bluetooth
 
     - name: Include Brave tasks
-      include_tasks: tasks/brave.yml
+      include_tasks: ../roles/arch_hypr/tasks/brave.yml
       tags:
         - brave
 
     - name: Include Firefox tasks
-      include_tasks: tasks/firefox.yml
+      include_tasks: ../roles/arch_hypr/tasks/firefox.yml
       tags:
         - firefox
 
     - name: Include Dev Deps
-      include_tasks: tasks/dev.yml
+      include_tasks: ../roles/arch_hypr/tasks/dev.yml
       tags:
         - dev
 
     - name: Include Docker tasks
-      include_tasks: tasks/docker.yml
+      include_tasks: ../roles/arch_hypr/tasks/docker.yml
       tags:
         - docker
 
     - name: Include Node tasks
-      include_tasks: tasks/node.yml
+      include_tasks: ../roles/arch_hypr/tasks/node.yml
       tags:
         - node
 
     - name: Include Java tasks
-      include_tasks: tasks/java.yml
+      include_tasks: ../roles/arch_hypr/tasks/java.yml
       tags:
         - java
 
     - name: Include Rust tasks
-      include_tasks: tasks/rust.yml
+      include_tasks: ../roles/arch_hypr/tasks/rust.yml
       tags:
         - rust
 
     - name: Include Neovim tasks
-      include_tasks: tasks/neovim.yml
+      include_tasks: ../roles/arch_hypr/tasks/neovim.yml
       tags:
         - neovim
 
     - name: Include Syncthing tasks
-      include_tasks: tasks/syncthing.yml
+      include_tasks: ../roles/arch_hypr/tasks/syncthing.yml
       tags:
         - syncthing
 
     - name: Include Tmux tasks
-      include_tasks: tasks/tmux.yml
+      include_tasks: ../roles/arch_hypr/tasks/tmux.yml
       tags:
         - tmux
 
     - name: Include Dual Boot tasks
-      include_tasks: tasks/dual_boot.yml
+      include_tasks: ../roles/arch_hypr/tasks/dual_boot.yml
       tags:
         - dual-boot
 
     - name: Include Apps tasks
-      include_tasks: tasks/apps.yml
+      include_tasks: ../roles/arch_hypr/tasks/apps.yml
       tags:
         - apps
