@@ -4,12 +4,22 @@ These are my personal dotfiles for Hyprland on Arch Linux. They are designed to 
 
 ---
 
-## Screenshots
+## Workflow
+
+Here is a short demo of my workflow:
+
+<img src="screenshots/demo.gif" alt="Workflow Demo" width="800"/>
+
+## Features
+
+- **A Beautiful and Consistent Design:** The entire setup is designed to be visually appealing and consistent, with a custom theme for all applications.
+- **Efficient Workflow:** The keybindings and scripts are designed to be as efficient as possible, allowing you to get your work done faster.
+- **Easy to Customize:** The dotfiles are designed to be easy to customize. You can change the theme, keybindings, and other settings to your liking.
+
+## A Glimpse of HollowDots
 
 <details>
 <summary>Click to expand</summary>
-
-### Here is a gallery of my desktop setup:
 
 <table>
   <tr>
@@ -18,14 +28,21 @@ These are my personal dotfiles for Hyprland on Arch Linux. They are designed to 
         <img src="screenshots/main.png" alt="Main Desktop" width="400"/>
       </a>
       <br />
-      <sub><b>Main Desktop</b></sub>
+      <sub><b>Main Desktop:</b> A clean and organized desktop with a custom wallpaper and a Waybar panel.</sub>
     </td>
     <td align="center">
       <a href="screenshots/fastfetch.png">
         <img src="screenshots/fastfetch.png" alt="Fastfetch" width="400"/>
       </a>
       <br />
-      <sub><b>Fastfetch</b></sub>
+      <sub><b>Fastfetch:</b> A customized fastfetch output with a theme that matches the overall aesthetic.</sub>
+    </td>
+     <td align="center">
+      <a href="screenshots/rofi.png">
+        <img src="screenshots/rofi.png" alt="Rofi" width="400"/>
+      </a>
+      <br />
+      <sub><b>Rofi:</b> A versatile application launcher with a custom theme and layout.</sub>
     </td>
   </tr>
   <tr>
@@ -34,30 +51,21 @@ These are my personal dotfiles for Hyprland on Arch Linux. They are designed to 
         <img src="screenshots/neovim.png" alt="Neovim" width="400"/>
       </a>
       <br />
-      <sub><b>Neovim</b></sub>
+      <sub><b>Neovim:</b> A highly customized Neovim setup with a custom theme, plugins, and a status line.</sub>
     </td>
-    <td align="center">
-      <a href="screenshots/rofi.png">
-        <img src="screenshots/rofi.png" alt="Rofi" width="400"/>
-      </a>
-      <br />
-      <sub><b>Rofi</b></sub>
-    </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="screenshots/yazi.png">
         <img src="screenshots/yazi.png" alt="Yazi File Manager" width="400"/>
       </a>
       <br />
-      <sub><b>Yazi File Manager</b></sub>
+      <sub><b>Yazi File Manager:</b> A terminal-based file manager with a custom theme and keybindings.</sub>
     </td>
     <td align="center">
       <a href="screenshots/ghostty.png">
         <img src="screenshots/ghostty.png" alt="Ghostty Terminal" width="400"/>
       </a>
       <br />
-      <sub><b>Ghostty Terminal</b></sub>
+      <sub><b>Ghostty Terminal:</b> A modern, GPU-accelerated terminal emulator with a custom theme.</sub>
     </td>
   </tr>
   <tr>
@@ -66,41 +74,35 @@ These are my personal dotfiles for Hyprland on Arch Linux. They are designed to 
         <img src="screenshots/bravebrowser.png" alt="Brave Browser" width="400"/>
       </a>
       <br />
-      <sub><b>Brave Browser</b></sub>
+      <sub><b>Brave Browser:</b> A privacy-focused web browser with a custom theme.</sub>
     </td>
     <td align="center">
       <a href="screenshots/hyprlock_preview.png">
         <img src="screenshots/hyprlock_preview.png" alt="Hyprland Lock Screen" width="400"/>
       </a>
       <br />
-      <sub><b>Hyprland Lock Screen</b></sub>
+      <sub><b>Hyprland Lock Screen:</b> A beautiful and secure lock screen with a custom theme.</sub>
     </td>
-  </tr>
-  <tr>
     <td align="center">
       <a href="screenshots/logoutoptions.png">
         <img src="screenshots/logoutoptions.png" alt="Logout Options" width="400"/>
       </a>
       <br />
-      <sub><b>Logout Options</b></sub>
+      <sub><b>Logout Options:</b> A clean and simple logout menu with options to shut down, restart, and sleep.</sub>
     </td>
-    <td align="center">
+  </tr>
+    <tr>
+    <td align="center" colspan="3">
       <a href="screenshots/sddm.png">
         <img src="screenshots/sddm.png" alt="SDDM Login Manager" width="400"/>
       </a>
       <br />
-      <sub><b>SDDM Login Manager</b></sub>
+      <sub><b>SDDM Login Manager:</b> A custom-themed SDDM login manager to complete the experience.</sub>
     </td>
   </tr>
 </table>
 
 </details>
-
-## Features
-
-- **A Beautiful and Consistent Design:** The entire setup is designed to be visually appealing and consistent, with a custom theme for all applications.
-- **Efficient Workflow:** The keybindings and scripts are designed to be as efficient as possible, allowing you to get your work done faster.
-- **Easy to Customize:** The dotfiles are designed to be easy to customize. You can change the theme, keybindings, and other settings to your liking.
 
 ## Ansible for Automation
 
@@ -122,10 +124,9 @@ This repository uses Ansible to automate the setup and management of the dotfile
 
 The following playbooks are available in the `playbooks/` directory:
 
-- **`main.yml`**: This is the main playbook that sets up the entire system. It installs all the necessary packages, copies the dotfiles, and configures the system settings.
+- **`main.yml`**: This is the main playbook that sets up the entire system. It installs all the necessary packages, copies the dotfiles, and aconfigs the system settings.
 - **`update.yml`**: This playbook updates the system packages.
 - **`deploy.yml`**: This playbook deploys the dotfiles to the local machine.
-- **`ssh-setup.yml`**: This playbook helps in setting up SSH keys for secure remote management.
 
 ### Usage
 
