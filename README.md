@@ -28,7 +28,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/main.png" alt="Main Desktop" width="800"/>
       </a>
       <br />
-      <sub><b>Main Desktop:</b> A clean and organized desktop with a custom wallpaper and a Waybar panel.</sub>
+      <sub style="font-size: 14px;"><b>Main Desktop:</b> A clean and organized desktop with a custom wallpaper and a Waybar panel.</sub>
     </td>
   </tr>
   <tr>
@@ -37,7 +37,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/fastfetch.png" alt="Fastfetch" width="800"/>
       </a>
       <br />
-      <sub><b>Fastfetch:</b> A customized fastfetch output with a theme that matches the overall aesthetic.</sub>
+      <sub style="font-size: 14px;"><b>Fastfetch:</b> A customized fastfetch output with a theme that matches the overall aesthetic.</sub>
     </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/rofi.png" alt="Rofi" width="800"/>
       </a>
       <br />
-      <sub><b>Rofi:</b> A versatile application launcher with a custom theme and layout.</sub>
+      <sub style="font-size: 14px;"><b>Rofi:</b> A versatile application launcher with a custom theme and layout.</sub>
     </td>
   </tr>
   <tr>
@@ -55,7 +55,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/neovim.png" alt="Neovim" width="800"/>
       </a>
       <br />
-      <sub><b>Neovim:</b> A highly customized Neovim setup with a custom theme, plugins, and a status line.</sub>
+      <sub style="font-size: 14px;"><b>Neovim:</b> A highly customized Neovim setup with a custom theme, plugins, and a status line.</sub>
     </td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/yazi.png" alt="Yazi File Manager" width="800"/>
       </a>
       <br />
-      <sub><b>Yazi File Manager:</b> A terminal-based file manager with a custom theme and keybindings.</sub>
+      <sub style="font-size: 14px;"><b>Yazi File Manager:</b> A terminal-based file manager with a custom theme and keybindings.</sub>
     </td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/ghostty.png" alt="Ghostty Terminal" width="800"/>
       </a>
       <br />
-      <sub><b>Ghostty Terminal:</b> A modern, GPU-accelerated terminal emulator with a custom theme.</sub>
+      <sub style="font-size: 14px;"><b>Ghostty Terminal:</b> A modern, GPU-accelerated terminal emulator with a custom theme.</sub>
     </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/bravebrowser.png" alt="Brave Browser" width="800"/>
       </a>
       <br />
-      <sub><b>Brave Browser:</b> A privacy-focused web browser with a custom theme.</sub>
+      <sub style="font-size: 14px;"><b>Brave Browser:</b> A privacy-focused web browser with a custom theme.</sub>
     </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/hyprlock_preview.png" alt="Hyprland Lock Screen" width="800"/>
       </a>
       <br />
-      <sub><b>Hyprland Lock Screen:</b> A beautiful and secure lock screen with a custom theme.</sub>
+      <sub style="font-size: 14px;"><b>Hyprland Lock Screen:</b> A beautiful and secure lock screen with a custom theme.</sub>
     </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/logoutoptions.png" alt="Logout Options" width="800"/>
       </a>
       <br />
-      <sub><b>Logout Options:</b> A clean and simple logout menu with options to shut down, restart, and sleep.</sub>
+      <sub style="font-size: 14px;"><b>Logout Options:</b> A clean and simple logout menu with options to shut down, restart, and sleep.</sub>
     </td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ Here is a short demo of my workflow:
         <img src="screenshots/sddm.png" alt="SDDM Login Manager" width="800"/>
       </a>
       <br />
-      <sub><b>SDDM Login Manager:</b> A custom-themed SDDM login manager to complete the experience.</sub>
+      <sub style="font-size: 14px;"><b>SDDM Login Manager:</b> A custom-themed SDDM login manager to complete the experience.</sub>
     </td>
   </tr>
 </table>
