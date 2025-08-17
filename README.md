@@ -25,21 +25,25 @@ Here is a short demo of my workflow:
   <tr>
     <td align="center">
       <a href="screenshots/main.png">
-        <img src="screenshots/main.png" alt="Main Desktop" width="400"/>
+        <img src="screenshots/main.png" alt="Main Desktop" width="800"/>
       </a>
       <br />
       <sub><b>Main Desktop:</b> A clean and organized desktop with a custom wallpaper and a Waybar panel.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="screenshots/fastfetch.png">
-        <img src="screenshots/fastfetch.png" alt="Fastfetch" width="400"/>
+        <img src="screenshots/fastfetch.png" alt="Fastfetch" width="800"/>
       </a>
       <br />
       <sub><b>Fastfetch:</b> A customized fastfetch output with a theme that matches the overall aesthetic.</sub>
     </td>
-     <td align="center">
+  </tr>
+  <tr>
+    <td align="center">
       <a href="screenshots/rofi.png">
-        <img src="screenshots/rofi.png" alt="Rofi" width="400"/>
+        <img src="screenshots/rofi.png" alt="Rofi" width="800"/>
       </a>
       <br />
       <sub><b>Rofi:</b> A versatile application launcher with a custom theme and layout.</sub>
@@ -48,21 +52,25 @@ Here is a short demo of my workflow:
   <tr>
     <td align="center">
       <a href="screenshots/neovim.png">
-        <img src="screenshots/neovim.png" alt="Neovim" width="400"/>
+        <img src="screenshots/neovim.png" alt="Neovim" width="800"/>
       </a>
       <br />
       <sub><b>Neovim:</b> A highly customized Neovim setup with a custom theme, plugins, and a status line.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="screenshots/yazi.png">
-        <img src="screenshots/yazi.png" alt="Yazi File Manager" width="400"/>
+        <img src="screenshots/yazi.png" alt="Yazi File Manager" width="800"/>
       </a>
       <br />
       <sub><b>Yazi File Manager:</b> A terminal-based file manager with a custom theme and keybindings.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="screenshots/ghostty.png">
-        <img src="screenshots/ghostty.png" alt="Ghostty Terminal" width="400"/>
+        <img src="screenshots/ghostty.png" alt="Ghostty Terminal" width="800"/>
       </a>
       <br />
       <sub><b>Ghostty Terminal:</b> A modern, GPU-accelerated terminal emulator with a custom theme.</sub>
@@ -71,30 +79,34 @@ Here is a short demo of my workflow:
   <tr>
     <td align="center">
       <a href="screenshots/bravebrowser.png">
-        <img src="screenshots/bravebrowser.png" alt="Brave Browser" width="400"/>
+        <img src="screenshots/bravebrowser.png" alt="Brave Browser" width="800"/>
       </a>
       <br />
       <sub><b>Brave Browser:</b> A privacy-focused web browser with a custom theme.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="screenshots/hyprlock_preview.png">
-        <img src="screenshots/hyprlock_preview.png" alt="Hyprland Lock Screen" width="400"/>
+        <img src="screenshots/hyprlock_preview.png" alt="Hyprland Lock Screen" width="800"/>
       </a>
       <br />
       <sub><b>Hyprland Lock Screen:</b> A beautiful and secure lock screen with a custom theme.</sub>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="screenshots/logoutoptions.png">
-        <img src="screenshots/logoutoptions.png" alt="Logout Options" width="400"/>
+        <img src="screenshots/logoutoptions.png" alt="Logout Options" width="800"/>
       </a>
       <br />
       <sub><b>Logout Options:</b> A clean and simple logout menu with options to shut down, restart, and sleep.</sub>
     </td>
   </tr>
-    <tr>
-    <td align="center" colspan="3">
+  <tr>
+    <td align="center">
       <a href="screenshots/sddm.png">
-        <img src="screenshots/sddm.png" alt="SDDM Login Manager" width="400"/>
+        <img src="screenshots/sddm.png" alt="SDDM Login Manager" width="800"/>
       </a>
       <br />
       <sub><b>SDDM Login Manager:</b> A custom-themed SDDM login manager to complete the experience.</sub>
@@ -138,7 +150,7 @@ ansible-playbook playbooks/main.yml --ask-become-pass
 
 ## Customization
 
-To customize the dotfiles, you can create user-specific configuration files in the `~/.config` directory.
+To customize the dotfiles,. You can create user-specific configuration files in the `~/.config` directory
 
 - **Hyprland:** Create a `~/.config/hypr/userprefs.conf` file to add your own Hyprland settings.
 - **Kitty:** Create a `~/.config/kitty/userprefs.conf` file to add your own Kitty settings.
