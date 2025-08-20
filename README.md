@@ -1,6 +1,6 @@
 # HollowDots
 
-These are my personal dotfiles for Hyprland on Arch Linux. They are designed to be a complete and easy-to-use setup that is both beautiful and efficient.
+These are my personal dotfiles and a tribute to Hollow knight and we are getting silksong lol . for Hyprland on Arch Linux. They are designed to be a complete and easy-to-use setup that is both beautiful and efficient. (Hornet Would be proud of me SHAWWWWWWW!!!)
 
 ---
 
@@ -34,24 +34,24 @@ This setup configures and themes a range of applications to ensure a cohesive ex
 
 The main modifier key is the **Super** (Windows) key, represented as `$mainMod`.
 
-| Keybinding              | Action                                   |
-| :---------------------- | :--------------------------------------- |
-| `$mainMod + C`            | Open Terminal (Kitty)                    |
-| `$mainMod + E`            | Open File Manager (Dolphin)              |
-| `$mainMod + F`            | Open Browser (Brave)                     |
-| `$mainMod + Q`            | Close focused window                     |
-| `$mainMod + L`            | Lock screen                              |
-| `$mainMod + Backspace`    | Show logout menu (wlogout)               |
-| `$mainMod + W`            | Toggle floating window                   |
-| `Alt + Return`          | Toggle fullscreen                        |
-| `$mainMod + A`            | Open application launcher (Rofi)         |
-| `$mainMod + Tab`          | Show window switcher (Rofi)              |
-| `$mainMod + [1-9]`        | Switch to workspace [1-9]                |
-| `$mainMod + Shift + [1-9]`| Move window to workspace [1-9]           |
-| `$mainMod + P`            | Take a partial screenshot                |
-| `$mainMod + Shift + T`    | Select theme                             |
-| `$mainMod + Shift + Z`    | Select wallpaper                         |
-| `$mainMod + V`            | Show clipboard history                   |
+| Keybinding                 | Action                           |
+| :------------------------- | :------------------------------- |
+| `$mainMod + C`             | Open Terminal (Kitty)            |
+| `$mainMod + E`             | Open File Manager (Dolphin)      |
+| `$mainMod + F`             | Open Browser (Brave)             |
+| `$mainMod + Q`             | Close focused window             |
+| `$mainMod + L`             | Lock screen                      |
+| `$mainMod + Backspace`     | Show logout menu (wlogout)       |
+| `$mainMod + W`             | Toggle floating window           |
+| `Alt + Return`             | Toggle fullscreen                |
+| `$mainMod + A`             | Open application launcher (Rofi) |
+| `$mainMod + Tab`           | Show window switcher (Rofi)      |
+| `$mainMod + [1-9]`         | Switch to workspace [1-9]        |
+| `$mainMod + Shift + [1-9]` | Move window to workspace [1-9]   |
+| `$mainMod + P`             | Take a partial screenshot        |
+| `$mainMod + Shift + T`     | Select theme                     |
+| `$mainMod + Shift + Z`     | Select wallpaper                 |
+| `$mainMod + V`             | Show clipboard history           |
 
 ## A Glimpse of HollowDots
 
@@ -193,10 +193,3 @@ To run a playbook, use the `ansible-playbook` command. For example:
   ```bash
   ansible-playbook Ansible/playbooks/update.yml --ask-become-pass
   ```
-
-## Customization
-
-To customize the dotfiles,. You can create user-specific configuration files in the `~/.config` directory
-
-- **Hyprland:** Create a `~/.config/hypr/userprefs.conf` file to add your own Hyprland settings.
-- **Kitty:** Create a `~/.config/kitty/userprefs.conf` file to add your own Kitty settings.
