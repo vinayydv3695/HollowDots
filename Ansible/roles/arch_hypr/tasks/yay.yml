@@ -11,6 +11,17 @@
     - aur
     - yay
 
+- name: Remove yay clone directory if it exists
+  become: true
+  ansible.builtin.file:
+    path: /tmp/yay
+    state: absent
+  tags:
+    - dotfiles
+    - install
+    - aur
+    - yay
+
 - name: Clone yay repository from AUR
   git:
     repo: https://aur.archlinux.org/yay.git
