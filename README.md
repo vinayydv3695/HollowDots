@@ -16,6 +16,43 @@ Here is a short demo of my workflow:
 - **Efficient Workflow:** The keybindings and scripts are designed to be as efficient as possible, allowing you to get your work done faster.
 - **Easy to Customize:** The dotfiles are designed to be easy to customize. You can change the theme, keybindings, and other settings to your liking.
 
+## Key Applications
+
+This setup configures and themes a range of applications to ensure a cohesive experience:
+
+- **Window Manager**: `hyprland`
+- **Bar**: `waybar`
+- **Launcher**: `rofi-wayland`
+- **Notification Daemon**: `dunst`
+- **Terminals**: `kitty` & `ghostty`
+- **File Manager**: `yazi`
+- **Editor**: `neovim`
+- **Utilities**: `swaybg`, `swayidle`, `hyprlock`, `wlogout`, `cliphist`, `playerctl`
+- **System**: `fastfetch`, `blueman`, `network-manager-applet`, `udiskie`
+
+## Core Keybindings
+
+The main modifier key is the **Super** (Windows) key, represented as `$mainMod`.
+
+| Keybinding              | Action                                   |
+| :---------------------- | :--------------------------------------- |
+| `$mainMod + C`            | Open Terminal (Kitty)                    |
+| `$mainMod + E`            | Open File Manager (Dolphin)              |
+| `$mainMod + F`            | Open Browser (Brave)                     |
+| `$mainMod + Q`            | Close focused window                     |
+| `$mainMod + L`            | Lock screen                              |
+| `$mainMod + Backspace`    | Show logout menu (wlogout)               |
+| `$mainMod + W`            | Toggle floating window                   |
+| `Alt + Return`          | Toggle fullscreen                        |
+| `$mainMod + A`            | Open application launcher (Rofi)         |
+| `$mainMod + Tab`          | Show window switcher (Rofi)              |
+| `$mainMod + [1-9]`        | Switch to workspace [1-9]                |
+| `$mainMod + Shift + [1-9]`| Move window to workspace [1-9]           |
+| `$mainMod + P`            | Take a partial screenshot                |
+| `$mainMod + Shift + T`    | Select theme                             |
+| `$mainMod + Shift + Z`    | Select wallpaper                         |
+| `$mainMod + V`            | Show clipboard history                   |
+
 ## A Glimpse of HollowDots
 
 <details>
@@ -134,19 +171,28 @@ This repository uses Ansible to automate the setup and management of the dotfile
 
 ### Playbooks
 
-The following playbooks are available in the `playbooks/` directory:
+The following playbooks are available in the `Ansible/playbooks/` directory:
 
-- **`main.yml`**: This is the main playbook that sets up the entire system. It installs all the necessary packages, copies the dotfiles, and aconfigs the system settings.
-- **`update.yml`**: This playbook updates the system packages.
-- **`deploy.yml`**: This playbook deploys the dotfiles to the local machine.
+- **`main.yml`**: This is the main playbook that sets up the entire system. It installs all the necessary packages, copies the dotfiles, and configures the system settings.
+- **`deploy.yml`**: This playbook deploys the dotfiles and installs all the packages defined in `group_vars/all.yml`.
+- **`update.yml`**: This playbook updates system packages (pacman and AUR) and synchronizes the dotfiles.
 
 ### Usage
 
-To run a playbook, use the `ansible-playbook` command. For example, to run the main setup playbook:
+To run a playbook, use the `ansible-playbook` command. For example:
 
-```bash
-ansible-playbook playbooks/main.yml --ask-become-pass
-```
+- **To run the main setup playbook:**
+  ```bash
+  ansible-playbook Ansible/playbooks/main.yml --ask-become-pass
+  ```
+- **To deploy the dotfiles and packages:**
+  ```bash
+  ansible-playbook Ansible/playbooks/deploy.yml --ask-become-pass
+  ```
+- **To update the system and dotfiles:**
+  ```bash
+  ansible-playbook Ansible/playbooks/update.yml --ask-become-pass
+  ```
 
 ## Customization
 
